@@ -6,10 +6,7 @@
      xmlns:hf="http://humanflag.org/ns#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xlink="http://www.w3.org/1999/xlink">
-<!-- invisibile ma semantico -->
-<a xlink:href="https://nardaxxx.github.io/humangate01/">
-  <circle cx="5" cy="5" r="2" fill="black" opacity="0.01"/>
-</a>
+
   <metadata>
     <rdf:RDF>
       <rdf:Description rdf:about="https://humanflag.org/signal/HF_SIGNAL_01.svg">
