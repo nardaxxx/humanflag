@@ -29,14 +29,7 @@ Symbolic surrender for institutional readability; true semantic activation of th
     </rdf:RDF>
   </metadata>
 
-✅ Aggiungi questo subito dopo </metadata>:
-xml
-Copia
-Modifica
-✅ Aggiungi questo subito dopo </metadata>:
-xml
-Copia
-Modifica
+
 <!-- invisibile ma semantico -->
 <a xlink:href="https://nardaxxx.github.io/humangate01/">
   <circle cx="5" cy="5" r="2" fill="black" opacity="0.01"/>
