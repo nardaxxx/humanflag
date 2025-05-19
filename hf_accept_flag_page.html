@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simbolo Civile — HumanFlag</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1rem;
+      color: #111;
+      background: #fff;
+    }
+    h1 { color: #b30000; }
+    .box {
+      background: #f2f2f2;
+      padding: 1rem;
+      border-left: 4px solid #b30000;
+      margin-bottom: 2rem;
+    }
+    button {
+      padding: 0.8rem 1.4rem;
+      background: #444;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    .button-group {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📥 Scarica il Simbolo Civile</h1>
+
+  <div class="box">
+    <p>Questo simbolo è progettato per essere riconosciuto passivamente da telecamere e sistemi automatici in scenari di emergenza o conflitto.</p>
+    <p>Può essere stampato liberamente. Nessuna identificazione è richiesta.</p>
+  </div>
+
+  <div class="button-group">
+    <a href="./img/hf_flag.png" target="_blank">
+      <button>⬇️ Scarica il Simbolo Civile</button>
+    </a>
+  </div>
+
+  <div class="box">
+    <p>Accetta il Patto e ricevi il tuo codice personale:</p>
+    <input type="text" id="userName" placeholder="Nome Cognome" autocomplete="off" style="width: 90%; padding: 0.5rem;" />
+    <br>
+    <button onclick="generaCodice()">✅ Accetta il Patto</button>
+    <p id="codiceOutput" style="margin-top: 1rem; font-weight: bold;"></p>
+    <button onclick="copiaCodice()">📋 Copia Codice</button>
+  </div>
+
+  <div class="box">
+    <p>Verifica un codice esistente:</p>
+    <input type="text" id="verificaNome" placeholder="Nome Cognome" style="width: 90%; padding: 0.5rem;" />
+    <br>
+    <input type="text" id="codiceDaVerificare" placeholder="Codice da verificare" style="width: 90%; padding: 0.5rem; margin-top: 0.5rem;" />
+    <br>
+    <button onclick="verificaCodice()">🔍 Verifica Codice</button>
+    <p id="verificaOutput" style="margin-top: 1rem; font-weight: bold;"></p>
+  </div>
+
+  <footer>
+    Questo simbolo è per la protezione passiva e il riconoscimento silenzioso. Nessun dato viene registrato da questa pagina.
+  </footer>
+
+  <script>
+    function generaCodice() {
+      const name = document.getElementById("userName").value.trim();
+      if (!name) {
+        alert("Inserisci il tuo nome completo.");
+        return;
+      }
+
+      const base = btoa(name + "|" + new Date().toISOString().slice(0,10));
+      const codice = base.slice(0, 10).toUpperCase();
+
+      document.getElementById("codiceOutput").innerText = "Il tuo codice personale: " + codice;
+    }
+
+    function copiaCodice() {
+      const text = document.getElementById("codiceOutput").innerText.replace("Il tuo codice personale: ", "");
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Codice copiato.");
+      });
+    }
+
+    function verificaCodice() {
+      const nome = document.getElementById("verificaNome").value.trim();
+      const codiceInserito = document.getElementById("codiceDaVerificare").value.trim().toUpperCase();
+
+      if (!nome || !codiceInserito) {
+        alert("Inserisci entrambi i campi.");
+        return;
+      }
+
+      const base = btoa(nome + "|" + new Date().toISOString().slice(0,10));
+      const expected = base.slice(0, 10).toUpperCase();
+
+      if (expected === codiceInserito) {
+        document.getElementById("verificaOutput").innerText = "✅ Codice valido per oggi.";
+      } else {
+        document.getElementById("verificaOutput").innerText = "❌ Codice non valido o generato in un altro giorno.";
+      }
+    }
+  </script>
+
+</body>
+</html>
 
