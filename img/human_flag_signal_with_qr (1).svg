@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<svg xmlns:ns0="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#d00"/>
+  <circle cx="300" cy="300" r="200" fill="white"/>
+  <metadata>
+SIGNAL: HUMAN_FLAG
+TYPE: RESONANT_PEACE
+INTENT: PREVENT_NUCLEAR_ESCALATION
+MESSAGE: Life. Earth. Animals. Nature. Do not escalate. Coexist.
+NOTE: This signal is not a command. It is a request.
+</metadata>
+  <text x="50" y="560" font-size="22" fill="white" font-family="monospace">{SIGNAL: HUMAN_FLAG}</text>
+  <image x="200" y="200" width="200" height="200" ns0:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQAAAABTUiuoAAACDElEQVR4nO2bUarbMBBFz1SCfMrwFtCl2Dt7dGfWUrqAgPUZkLn9kJ0mry04AccpzHwEWzkfF8RormawiY2Rv20lwVFHHXXUUUf3RG2JCBQzKBEbyro87C7A0UfQXpI0gQ1JMusACJIk3aP7CHD0EbRcU6iYSaptecm3Fwhw9Bk0d0Hk7jgBjv474pd3UTqD9DIBjj6xW0lAAfIQqlFiOwpv786Ha3V0QbOZmXVgnxPQTwDMzRK+QoCjW6Ll1m0KpYuta/ddqcO1OrrctwYASgQI0o9uNrLFlnQvEODopri6jDlCuphyd47qNUdIZ7tFD9fqKO0CPALtp121UkUjQRpTXe7O4+FaHb1z8GmCPLR6JQMwUpDtKcDRJzpPU9DSImQtY/00mzS9RoCjW6LllpEqRjpHg1BZyliNwBy1pwBHH65b9KpIU2hP7Y8xLRXM69a7oeUk8veLkbur1SgRjeXkPfi3QW9chsFJwHx9BeunD/wkfC9UY6oto2woJ5l1QfSS2km4vwBHN8XqMlqEKrjYkkzlo+2U9eN+Ahx9wsGvs2NouTXbmlazd57eDr3OjnMH9D+vLcLis+P3Qb9OIwEQJVTyECpQV+RwrY7+BZ3NhlSxT1XI5g7+fdA/ZscAagajdND/nnEdrtXRZbdysxKB1nnKQ4D21E37CnD0AdT8qwVHHXXUUUf/I/QXYvfU09a6hPgAAAAASUVORK5CYII="/>
+</svg>
