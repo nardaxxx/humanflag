@@ -76,6 +76,21 @@
   <footer>
     Questo simbolo è per la protezione passiva e il riconoscimento silenzioso. Nessun dato viene registrato da questa pagina.
   </footer>
+<script>
+function generaCodice() {
+  const name = document.getElementById("userName").value.trim();
+  if (!name) {
+    alert("Inserisci il tuo nome completo.");
+    return;
+  }
+
+  // Algoritmo semplice: hash base + data
+  const base = btoa(name + "|" + new Date().toISOString().slice(0,10)); // Base64
+  const codice = base.slice(0, 10).toUpperCase();
+
+  document.getElementById("codiceOutput").innerText = "Il tuo codice personale: " + codice;
+}
+</script>
 
 </body>
 </html>
