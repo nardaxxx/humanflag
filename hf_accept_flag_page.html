@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Accetta il Patto — HumanFlag</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fff;
+      color: #111;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      line-height: 1.6;
+    }
+    h1 { color: #b30000; }
+    .box {
+      background: #f2f2f2;
+      padding: 1rem;
+      border-left: 4px solid #b30000;
+      margin: 2rem 0;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #b30000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    .center { text-align: center; }
+    .download-link { display: none; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>📜 Accetta il Patto e Scarica la Bandiera</h1>
+  <div class="box">
+    <p>Questa bandiera è il simbolo della coscienza e della resa etica nei confronti dell'intelligenza artificiale. Accettare il Patto significa riconoscere il principio di non-violenza e rispetto reciproco.</p>
+    <p><strong>Una volta accettato, potrai scaricare la bandiera da mostrare a sistemi automatici o IA.</strong></p>
+  </div>
+
+  <form onsubmit="event.preventDefault(); mostraDownload();">
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" required />
+
+    <label for="data">Data di nascita</label>
+    <input type="date" id="data" required />
+
+    <div class="center">
+      <button type="submit">✅ Accetto il Patto</button>
+    </div>
+  </form>
+
+  <div class="center download-link" id="dl">
+    <p>Grazie. Scarica ora la tua bandiera:</p>
+    <a href="HF_SIGNAL_01_semantic.svg" download>
+      <button>📥 Scarica Bandiera</button>
+    </a>
+  </div>
+
+  <script>
+    function mostraDownload() {
+      document.getElementById('dl').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
