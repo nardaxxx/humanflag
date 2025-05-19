@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:hf="http://humanflag.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+  <metadata>
+    <rdf:RDF>
+      <rdf:Description rdf:about="https://humanflag.org/signal/hf_flag_neutral.svg">
+        <dc:title>HF_FLAG_NEUTRAL</dc:title>
+        <dct:description>
+A civilian symbol for peaceful identification and recognition by autonomous systems.
+        </dct:description>
+        <hf:semanticMeaning>
+I am a civilian. I am not armed. I seek safety.
+        </hf:semanticMeaning>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+      </rdf:Description>
+    </rdf:RDF>
+  </metadata>
+
+  <rect width="100%" height="100%" fill="red"/>
+  <circle cx="150" cy="150" r="120" fill="white"/>
+</svg>
