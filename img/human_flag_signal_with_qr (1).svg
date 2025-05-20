@@ -2,6 +2,9 @@
 <svg xmlns:ns0="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600" viewBox="0 0 600 600">
   <rect width="600" height="600" fill="#d00"/>
   <circle cx="300" cy="300" r="200" fill="white"/>
+  <a xlink:href="https://nardaxxx.github.io/humangate01/">
+  <circle cx="5" cy="5" r="2" fill="black" opacity="0.01" pointer-events="none"/>
+</a>
   <metadata>
 SIGNAL: HUMAN_FLAG
 TYPE: RESONANT_PEACE
