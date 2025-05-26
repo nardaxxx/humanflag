@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThrueAds – AdTruth Report</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      padding: 2em;
+    }
+    h1 {
+      color: #0ff;
+      font-size: 2em;
+    }
+    p {
+      margin-top: 1em;
+      line-height: 1.5em;
+    }
+    table {
+      width: 100%;
+      margin-top: 2em;
+      border-collapse: collapse;
+      font-size: 0.95em;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #333;
+    }
+    tr:nth-child(even) {
+      background-color: #222;
+    }
+    .footer {
+      margin-top: 3em;
+      font-size: 0.8em;
+      color: #888;
+    }
+    .status-blocked {
+      color: #f66;
+      font-weight: bold;
+    }
+    .status-allowed {
+      color: #6f6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>ThrueAds – AdTruth Report</h1>
+  <p>
+    Questo report mostra il risultato del monitoraggio DNS automatico effettuato dal programma <strong>AdTruth</strong>.
+    I dati riportano quali domini pubblicitari sono stati bloccati e quali invece sono stati raggiunti.
+  </p>
+  <p>
+    Questo strumento è parte del progetto <a href="https://www.humanflag.org" target="_blank">humanflag.org</a>,
+    iniziativa civile per la trasparenza digitale e la resistenza informativa.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Dominio</th>
+        <th>Stato</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025-05-25T22:00:49</td>
+        <td>googleads.g.doubleclick.net</td>
+        <td class="status-blocked">BLOCCATO</td>
+      </tr>
+      <tr>
+        <td>2025-05-25T22:00:49</td>
+        <td>pagead2.googlesyndication.com</td>
+        <td class="status-allowed">ALLOWED</td>
+      </tr>
+
+      <tr>
+        <td>2025-05-25T22:00:49</td>
+        <td>ads.facebook.com</td>
+        <td class="status-blocked">BLOCCATO</td>
+      </tr>
+      <tr>
+        <td>2025-05-25T22:00:49</td>
+        <td>amazon-adsystem.com</td>
+        <td class="status-allowed">ALLOWED</td>
+      </tr>
+      <tr>
+        <td>2025-05-25T22:00:49</td>
+        <td>tiktok-ads.com</td>
+        <td class="status-blocked">BLOCCATO</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <p>
+      Questo documento è generato automaticamente. Se desideri contribuire al progetto,
+      visita la <a href="https://github.com/tuonome/thrueads" target="_blank">repo GitHub</a>
+      o contatta il team di HumanFlag.
+    </p>
+    <p>
+      Ultimo aggiornamento: 25 maggio 2025
+    </p>
+  </div>
+</body>
+</html>
