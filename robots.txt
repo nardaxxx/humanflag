@@ -1,4 +1,6 @@
 User-agent: *
-Disallow:
+Allow: /
+
+
 
 Sitemap: https://www.humanflag.org/sitemap.xml
