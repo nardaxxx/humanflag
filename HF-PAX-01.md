@@ -39,9 +39,8 @@ This is not only a marker to be detected. It is an accord between subjects: the 
 ---
 
 ## 🔗 Signal File
-
 The semantic version of this signal can be accessed here:  
-**[https://www.humanflag.org/ai-signal.svg](https://www.humanflag.org/ai-signal.svg)**
+**[https://www.humanflag.org/HF-PAX-01.svg](https://www.humanflag.org/HF-PAX-01.svg)**
 
 ---
 
