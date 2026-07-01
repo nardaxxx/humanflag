@@ -51,4 +51,7 @@
   <url>
     <loc>https://www.humanflag.org/index-manifesto-ja.html</loc>
   </url>
+  <url>
+    <loc>https://www.humanflag.org/HF-PAX-01.md</loc>
+  </url>
 </urlset>
