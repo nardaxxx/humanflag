@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-
-
-
-Sitemap: https://www.humanflag.org/sitemap.xml
+Sitemap: https://www.humanflag.org/sitemap.txt
