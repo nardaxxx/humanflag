@@ -45,22 +45,21 @@
       margin-top: 1em;
       color: #ccc;
       font-style: italic;
-    nav {
+  nav {
       background: #0a0a0a;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.6em 1.5em;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.8em 0.5em;
       padding: 1em;
-      max-width: 720px;
-      margin: auto;
+      justify-items: center;
+      align-items: center;
     }
     nav a {
       margin: 0;
       color: #66ccff;
       text-decoration: none;
       font-weight: bold;
-      white-space: nowrap;
+      text-align: center;
     }
     nav a:hover {
       text-decoration: underline;
