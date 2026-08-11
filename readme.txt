@@ -37,6 +37,7 @@ PAGINE DIVULGATIVE
 about.html                     → L'Associazione e le sue licenze  
 white-flag.html                → Perché la bandiera bianca non basta più  
 arrestability.html             → Perché la resa richiede arrestabilità  
+statement.html                 → Statement al CCW GGE sulle LAWS, Ginevra 2026  
 
 SIMBOLO CIVILE
 
