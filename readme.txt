@@ -13,7 +13,7 @@ index-ja.html        → Versione Giapponese
 
 robots.txt           → File per Google  
 sitemap.xml          → Elenco URL per indicizzazione  
-LICENSE.txt          → Licenza Creative Commons  
+license.txt          → Licenza Creative Commons  
 
 
 Contatto: humanflag@email.com
