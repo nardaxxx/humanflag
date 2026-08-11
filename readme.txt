@@ -2,7 +2,6 @@ Human Flag – File principali del sito
 
 index.html           → Homepage multilingua  
 index-it.html        → Versione Italiana  
-index-en.html        → Versione Inglese  
 index-fr.html        → Versione Francese  
 index-de.html        → Versione Tedesca  
 index-es.html        → Versione Spagnola  
