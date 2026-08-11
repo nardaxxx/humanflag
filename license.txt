@@ -1,9 +1,28 @@
-Human Flag - Copyright 2025
+Human Flag - Copyright 2025–2026
 
-Questo progetto è rilasciato sotto licenza Creative Commons CC BY-NC-ND 4.0.
-Puoi condividerlo liberamente, a condizione di:
-- Attribuire la fonte
-- Non usarlo a fini commerciali
-- Non modificarlo o adattarlo
+Le licenze applicabili variano a seconda del tipo di materiale.
 
-https://creativecommons.org/licenses/by-nc-nd/4.0/
+1. Working paper e note tecniche dell'Associazione
+   Creative Commons CC BY 4.0
+   Depositati su Zenodo con DOI permanente.
+   https://creativecommons.org/licenses/by/4.0/
+
+2. File di protocollo HF SIGNAL 01
+   Creative Commons CC BY-NC-ND 4.0
+   Liberi per uso personale, civile e umanitario; l'implementazione
+   commerciale e istituzionale richiede un accordo di licenza scritto
+   con la Human Flag Association.
+   https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+3. HF-PAX-01 (segnale semantico)
+   Creative Commons CC BY-NC-SA 4.0
+   https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+4. Contenuti del sito (pagine, testi, immagini)
+   Creative Commons CC BY-NC-ND 4.0
+   https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+La restrizione non commerciale si applica al protocollo e ai contenuti
+del sito, non ai working paper e alle note tecniche.
+
+Contatto per le licenze: humanflag@email.com
