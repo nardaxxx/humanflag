@@ -1,0 +1,115 @@
+/* Human Flag — read-aloud control.
+   Loaded only by statement.html. The inline <style> block of that page is not
+   touched by this file: every selector here is scoped to the .read-aloud
+   control and its own classes. */
+
+.read-aloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75em 1em;
+  margin: 1.5em 0 2em;
+}
+
+/* Play / stop button — red field, white disc, after HF SIGNAL 01. */
+.ra-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0.7em 1.3em;
+  background: #c62828;
+  color: #fff;
+  border: 1px solid #8e1f1f;
+  border-radius: 8px;
+  font-family: Georgia, serif;
+  font-size: 0.95em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ra-btn:hover { background: #d63535; }
+.ra-btn:active { background: #a92222; }
+
+.ra-disc {
+  flex: none;
+  width: 0.85em;
+  height: 0.85em;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/* Slow pulse while speaking. Deliberately kept near 0.8 Hz: the signal this
+   button refers to pulses at 7 Hz, which is inside the photosensitive-seizure
+   band and must never be reproduced on screen. */
+.read-aloud.is-speaking .ra-disc {
+  animation: ra-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes ra-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Language selector — rendered only when a translation is present. */
+.ra-langs {
+  display: inline-flex;
+  gap: 0.4em;
+}
+
+.ra-lang {
+  padding: 0.45em 0.8em;
+  background: #111;
+  color: #66ccff;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-family: Georgia, serif;
+  font-size: 0.85em;
+  cursor: pointer;
+}
+
+.ra-lang:hover { background: #1a1a1a; }
+
+.ra-lang.is-active {
+  background: #222;
+  color: #fff;
+  border-color: #66ccff;
+}
+
+/* The page sets `p { text-align: justify }`; these two lines read as UI, not
+   as prose, so they are restored to the natural flow direction. */
+.ra-status,
+.ra-fallback {
+  margin: 0;
+  color: #aaa;
+  font-style: italic;
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.ra-fallback { margin: 1.5em 0 2em; }
+
+/* Keyboard focus stays visible. The :focus rule carries browsers without
+   :focus-visible; the pair below removes the ring for pointer users only. */
+.ra-btn:focus,
+.ra-lang:focus {
+  outline: 2px solid #66ccff;
+  outline-offset: 3px;
+}
+
+.ra-btn:focus:not(:focus-visible),
+.ra-lang:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.ra-btn:focus-visible,
+.ra-lang:focus-visible {
+  outline: 2px solid #66ccff;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .read-aloud.is-speaking .ra-disc {
+    animation: none;
+    opacity: 0.55;
+  }
+}
