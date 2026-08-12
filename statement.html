@@ -23,7 +23,6 @@
     .note { background: #1a1a1a; border: 1px solid #333; padding: 1em 1.5em; margin: 1.5em 0; font-size: 0.95em; color: #ccc; }
     .note ul { line-height: 1.6; }
   </style>
-  <link rel="stylesheet" href="read-aloud.css">
 </head>
 <body>
   <a href="index.html" class="back">← Back to Human Flag</a>
@@ -36,29 +35,10 @@
   <hr>
   <h2>Statement</h2>
 
-  <div class="read-aloud" id="read-aloud" hidden>
-    <button type="button" class="ra-btn" id="ra-play" aria-pressed="false">
-      <span class="ra-disc" aria-hidden="true"></span>
-      <span id="ra-label">Read aloud</span>
-    </button>
-    <div class="ra-langs" id="ra-langs" role="group" aria-label="Reading language" hidden>
-      <button type="button" class="ra-lang is-active" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" class="ra-lang" data-lang="it" aria-pressed="false">IT</button>
-    </div>
-    <p class="ra-status" id="ra-status" role="status" aria-live="polite"></p>
-  </div>
-
-  <p class="ra-fallback" id="ra-fallback">Read aloud is not available in this browser. The statement is reproduced in full below.</p>
+  <p id="ra-fallback">Read aloud is not available in this browser.</p>
+  <button type="button" id="ra-play" aria-pressed="false" hidden>🔊 Read aloud</button>
 
   <p id="statement-en">Mr. Chairman, distinguished delegates. We are entering a robotic Wild West. Autonomous systems are being prepared for war before they can reliably recognize surrender. The law protects a person who surrenders, but that protection works only if the signal can be recognized. A flag or another signal communicates the intention to surrender. The State must ensure that the system can recognize it and stop in time. Under Article 36, that time must be measured and tested. HF SIGNAL 01 makes surrender recognizable to people and autonomous systems. No one can be required to do the impossible &mdash; <em>ad impossibilia nemo tenetur</em> &mdash; but impossibility created by design is a choice. Thank you.</p>
-
-  <!-- Italian translation of the statement.
-       Paste the Italian text between the tags of the element below, leaving the
-       element and its id in place. The IT selector appears on its own as soon as
-       this element holds text; while it is empty the page offers English only and
-       renders no language selector at all. -->
-  <div id="statement-it" lang="it" hidden></div>
-
   <hr>
   <p class="meta"><em>Human Flag Association — Bellinzona, Switzerland</em></p>
   <script src="read-aloud.js"></script>
