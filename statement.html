@@ -22,6 +22,9 @@
     .back { display: inline-block; margin-bottom: 2em; color: #66ccff; text-decoration: none; font-size: 0.9em; }
     .note { background: #1a1a1a; border: 1px solid #333; padding: 1em 1.5em; margin: 1.5em 0; font-size: 0.95em; color: #ccc; }
     .note ul { line-height: 1.6; }
+    #ra-play { display: inline-block; margin: 0.5em 0 1.5em; padding: 0.8em 1.5em; background: #222; color: #66ccff; border: 1px solid #333; border-radius: 8px; font-family: Georgia, serif; font-size: 1em; font-weight: bold; cursor: pointer; }
+    #ra-play:hover { background: #333; }
+    #ra-fallback { color: #aaa; font-style: italic; }
   </style>
 </head>
 <body>
@@ -34,8 +37,13 @@
   </p>
   <hr>
   <h2>Statement</h2>
-  <p>Mr. Chairman, distinguished delegates. We are entering a robotic Wild West. Autonomous systems are being prepared for war before they can reliably recognize surrender. The law protects a person who surrenders, but that protection works only if the signal can be recognized. A flag or another signal communicates the intention to surrender. The State must ensure that the system can recognize it and stop in time. Under Article 36, that time must be measured and tested. HF SIGNAL 01 makes surrender recognizable to people and autonomous systems. No one can be required to do the impossible &mdash; <em>ad impossibilia nemo tenetur</em> &mdash; but impossibility created by design is a choice. Thank you.</p>
+
+  <p id="ra-fallback">Read aloud is not available in this browser.</p>
+  <button type="button" id="ra-play" aria-pressed="false" hidden>🔊 Read aloud</button>
+
+  <p id="statement-en">Mr. Chairman, distinguished delegates. We are entering a robotic Wild West. Autonomous systems are being prepared for war before they can reliably recognize surrender. The law protects a person who surrenders, but that protection works only if the signal can be recognized. A flag or another signal communicates the intention to surrender. The State must ensure that the system can recognize it and stop in time. Under Article 36, that time must be measured and tested. HF SIGNAL 01 makes surrender recognizable to people and autonomous systems. No one can be required to do the impossible &mdash; <em>ad impossibilia nemo tenetur</em> &mdash; but impossibility created by design is a choice. Thank you.</p>
   <hr>
   <p class="meta"><em>Human Flag Association — Bellinzona, Switzerland</em></p>
+  <script src="read-aloud.js"></script>
 </body>
 </html>
