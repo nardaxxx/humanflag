@@ -21,7 +21,7 @@ Symbolic surrender for institutional readability; true semantic activation of th
         </hf:dualLayer>
         <hf:coreConscience rdf:resource="https://nardaxxx.github.io/conscience/"/>
         <hf:emittedBy rdf:resource="https://nardaxxx.github.io/humangate01/"/>
-        <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
       </rdf:Description>
     </rdf:RDF>
   </metadata>
