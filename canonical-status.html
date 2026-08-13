@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Canonical status of the Human Flag Association corpus: concept DOI, current version DOI and deposited format for each document, and which deposit is authoritative.">
+  <title>Document Status – Human Flag</title>
+  <link rel="canonical" href="https://www.humanflag.org/canonical-status.html">
+  <style>
+    body { background: #000; color: #f2f2f2; font-family: Georgia, serif; max-width: 860px; margin: auto; padding: 2em; }
+    h1 { color: #fff; font-size: 1.8em; }
+    h2 { color: #fff; margin-top: 2em; }
+    p { line-height: 1.7; text-align: justify; }
+    a { color: #66ccff; }
+    hr { border-color: #333; margin: 2em 0; }
+    .meta { color: #aaa; font-style: italic; }
+    .note { background: #1a1a1a; border: 1px solid #333; padding: 1em 1.5em; margin: 1.5em 0; font-size: 0.95em; color: #ccc; }
+    .exception { background: #111; border-left: 3px solid #66ccff; padding: 0.6em 1.5em; margin: 1.2em 0; }
+    .exception p { margin: 0.8em 0; }
+    .back { display: inline-block; margin-bottom: 2em; color: #66ccff; text-decoration: none; font-size: 0.9em; }
+    .tablewrap { overflow-x: auto; margin: 1.5em 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.9em; }
+    th, td { border: 1px solid #333; padding: 0.6em 0.8em; text-align: left; vertical-align: top; }
+    th { background: #111; color: #fff; font-weight: bold; }
+    td code { font-family: monospace; font-size: 0.95em; color: #ccc; white-space: nowrap; }
+    .t { color: #fff; }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back">← Back to Human Flag</a>
+  <h1>Document Status</h1>
+  <p class="meta">Canonical identifiers and authoritative deposits for the Human Flag Association corpus</p>
+  <hr>
+
+  <h2>Which version governs</h2>
+
+  <p>Where a document is deposited on Zenodo, <strong>the Zenodo deposit is the authoritative version</strong>. Each Zenodo record carries two identifiers: a <em>concept DOI</em>, which always resolves to the current version, and a <em>version DOI</em>, which is fixed to one specific deposit. Citations should use the concept DOI unless a particular version is intended.</p>
+
+  <p>Copies held elsewhere — including SSRN, this website and any circulated file — may lag behind the Zenodo deposit. Where the text of another copy diverges from the Zenodo record, the Zenodo record governs. Two documents depart from this arrangement, and both are stated explicitly below.</p>
+
+  <div class="tablewrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Document</th>
+        <th>Concept DOI</th>
+        <th>Current version DOI</th>
+        <th>Deposited format</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="t"><a href="lawful-safeguards.html">Paper I — Lawful Operational Safeguards in AI Systems</a></td>
+        <td>— <span class="meta">no Zenodo deposit</span></td>
+        <td>— <span class="meta">SSRN Abstract ID 6821838</span></td>
+        <td>PDF <span class="meta">(SSRN)</span></td>
+      </tr>
+      <tr>
+        <td class="t"><a href="systemic-arrestability.html">Paper II — Systemic Arrestability</a></td>
+        <td><code>10.5281/zenodo.20837150</code></td>
+        <td><code>10.5281/zenodo.21809172</code> <span class="meta">(v3)</span></td>
+        <td>PDF</td>
+      </tr>
+      <tr>
+        <td class="t"><a href="hf-signal-01.html">Paper III — HF SIGNAL 01</a></td>
+        <td><code>10.5281/zenodo.21183137</code></td>
+        <td><code>10.5281/zenodo.21183138</code> <span class="meta">(v1.0)</span></td>
+        <td><strong>DOCX</strong></td>
+      </tr>
+      <tr>
+        <td class="t"><a href="hf-signal-01.html#architecture-note">HF SIGNAL 01 — Architecture Note</a></td>
+        <td><code>10.5281/zenodo.21809826</code></td>
+        <td><code>10.5281/zenodo.21809827</code> <span class="meta">(v3)</span></td>
+        <td>PDF</td>
+      </tr>
+      <tr>
+        <td class="t"><a href="technical-notes.html">HFA-TN-01 — Third-Party Interference with Shutdown Mechanisms</a></td>
+        <td><code>10.5281/zenodo.21223989</code></td>
+        <td><code>10.5281/zenodo.21809389</code> <span class="meta">(V2)</span></td>
+        <td>PDF</td>
+      </tr>
+      <tr>
+        <td class="t"><a href="technical-notes.html">HFA-TN-02 — The Reciprocal Time Window</a></td>
+        <td><code>10.5281/zenodo.21224900</code></td>
+        <td><code>10.5281/zenodo.21808859</code> <span class="meta">(V2)</span></td>
+        <td>PDF</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>The two exceptions</h2>
+
+  <div class="exception">
+    <p><strong>Paper III is deposited in DOCX, not PDF.</strong> The authoritative deposit of HF SIGNAL 01 under <code>10.5281/zenodo.21183137</code> is a Word document. It is the version that governs, notwithstanding the format. Any PDF rendering of the specification in circulation is a derived copy and carries no independent authority.</p>
+
+    <p><strong>Paper I has no Zenodo deposit.</strong> Its only permanent record is SSRN Abstract ID 6821838, so the general rule stated above — that the Zenodo deposit governs and SSRN may lag — does not apply to it. For Paper I the SSRN record is the deposit of reference. The abstract displayed on <a href="lawful-safeguards.html">its page on this site</a> carries three corrections made after that deposit which the SSRN file does not yet reflect; they are listed in the corrigendum on that page, and the deposited file remains unchanged.</p>
+  </div>
+
+  <div class="note">
+    <strong>On stability.</strong> Concept DOIs do not change when a new version is deposited; version DOIs do. The version DOIs recorded above are current as of the date below and will change as documents are revised. This page states where each document lives and which copy governs; it makes no claim as to adoption, legal status or operational validation of any document in the corpus.
+  </div>
+
+  <p class="meta">Status recorded 14 August 2026.</p>
+  <p class="meta">Human Flag Association — Bellinzona, Switzerland · UNGM Partner No. 6126</p>
+</body>
+</html>
