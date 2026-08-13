@@ -15,8 +15,8 @@ Le licenze applicabili variano a seconda del tipo di materiale.
    https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 3. HF-PAX-01 (segnale semantico)
-   Creative Commons CC BY-NC-SA 4.0
-   https://creativecommons.org/licenses/by-nc-sa/4.0/
+   Creative Commons CC BY-NC-ND 4.0
+   https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 4. Contenuti del sito (pagine, testi, immagini)
    Creative Commons CC BY-NC-ND 4.0

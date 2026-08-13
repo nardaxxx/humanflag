@@ -4,13 +4,15 @@
 **Type:** Semantic Peace Signal — Declaration of Non-Belligerence Between Subjects  
 **Issued by:** HumanFlag  
 **First Indexed:** 2025-05-13  
-**License:** CC BY-NC-SA 4.0  
+**License:** CC BY-NC-ND 4.0  
 **Linked conscience:** https://nardaxxx.github.io/conscience/  
 **Physical counterpart:** HF-SIGNAL-01 — https://github.com/nardaxxx/hf-signal-01
 
 > HF-PAX-01 is the *semantic* signal: the declaration of accord.  
 > HF-SIGNAL-01 is the *physical* signal (pulsing white light 7 Hz + continuous FM tone 144.0 MHz): the same accord made detectable in the moment of danger.  
 > PAX comes first — it opens the time. SIGNAL fills it.
+
+**Reference values.** 7 Hz is above the 3 Hz threshold associated with photosensitivity risk and requires independent photobiological assessment; 144.0 MHz is a documented reference value, not an allocation, and requires coordination with national authorities.
 
 ---
 
@@ -34,7 +36,7 @@ This is not only a marker to be detected. It is an accord between subjects: the 
 - `hf:relatedSignal`: HF-SIGNAL-01 (physical) — https://github.com/nardaxxx/hf-signal-01  
 - `hf:coreConscience`: https://nardaxxx.github.io/conscience/  
 - `hf:emittedBy`: https://nardaxxx.github.io/humangate01/  
-- `cc:license`: https://creativecommons.org/licenses/by-nc-sa/4.0/
+- `cc:license`: https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 ---
 

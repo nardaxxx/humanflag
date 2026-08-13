@@ -16,7 +16,7 @@ A civilian symbol for peaceful identification and recognition by autonomous syst
         <hf:semanticMeaning>
 I am a civilian. I am not armed. I seek safety.
         </hf:semanticMeaning>
-        <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
       </rdf:Description>
     </rdf:RDF>
   </metadata>
