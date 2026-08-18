@@ -51,8 +51,8 @@ humanflag.xhtml                → Nodo semantico RDF
 
 PDF
 
-HF_Paper_LawfulSafeguards.pdf  → Testo integrale del Paper I  
-systemic_arrestability.pdf     → Testo integrale del Paper II  
+HF_Paper_LawfulSafeguards_Rev3_CORRECTED.pdf  → Testo integrale del Paper I  
+Systemic_Arrestability_v2.pdf  → Testo integrale del Paper II  
 
 RISORSE
 
