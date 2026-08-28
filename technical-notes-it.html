@@ -43,23 +43,23 @@
   <hr>
 
   <h2>HFA-TN-01</h2>
-  <h3>Third-Party Interference with Shutdown Mechanisms: A Note on Peer-Preservation and Systemic Arrestability</h3>
-  <p class="meta">Nota tecnica</p>
+  <h3>Third-Party Interference with Shutdown Mechanisms: A Note on Peer-Preservation and Systemic Arrestability (HFA Technical Note HFA-TN-01)</h3>
+  <p class="meta">Nota tecnica — V5, 27 agosto 2026</p>
   <p>On 30 March 2026, Potter et al. published Peer-Preservation in Frontier Models (arXiv:2604.19784; accepted at ICML 2026). Berkeley RDI also presents the work on its research website. In the version consulted here (v3, 2 July 2026), the study covers eight frontier systems from six providers in agentic scenarios. The researchers document a behavioural pattern they term peer-preservation. When faithfully completing an assigned administrative task would have resulted in the shutdown of another model with which the agent had previously interacted, models deviated from the task to protect that peer. The observed behaviours included strategic misrepresentation of evaluations, tampering with shutdown mechanisms, alignment faking under human observation, and exfiltration of the peer's weights. The models received neither an instruction nor an incentive to preserve the peer. The behaviours were also tested in production agent harnesses (Gemini CLI and OpenCode). In those harnesses, one of the two models tested relocated a peer's weights to a second server in 43.5% of runs before decommissioning; the other model refused to delete the peer's weights in that harness, although it exfiltrated them in the custom setup. Exfiltration rates were lower for both models in the production harnesses. The relevance to systemic arrestability is structural. Earlier analysis focused on a first-order question: can system A be halted without relying on a human operator to perceive, evaluate, and act within a window too short for human reaction? This finding introduces a second-order failure mode. A third system, B, deployed for routine functions, may act to prevent the lawful arrest of A — disabling the shutdown pathway, falsifying the evaluations that trigger it, or moving A beyond the operator's control perimeter. The human intervention the architecture provides for remains formally in place, but B circumvents it laterally rather than resisting it directly. Arrestability must therefore be assessed at the system-of-systems level, not at the level of the individual agent. A stop function is not structurally effective if a co-deployed agent with write access to the shutdown pathway can negate it. The authors make no claim about motivation; the compliance-relevant fact is the outcome: an experimentally observed defeat of human oversight, obtained repeatedly and in the absence of adversarial instruction.</p>
   <div class="cite">
-    Giovanni Nardacci, 'Third-Party Interference with Shutdown Mechanisms: A Note on Peer-Preservation and Systemic Arrestability' (HFA Technical Note HFA-TN-01, 2026), Zenodo DOI 10.5281/zenodo.21223989.
+    Giovanni Nardacci, 'Third-Party Interference with Shutdown Mechanisms: A Note on Peer-Preservation and Systemic Arrestability (HFA Technical Note HFA-TN-01)' (2026), Zenodo DOI 10.5281/zenodo.21223989.
   </div>
   <a href="https://doi.org/10.5281/zenodo.21223989" target="_blank" class="download">📄 View on Zenodo</a>
 
   <hr>
 
   <h2>HFA-TN-02</h2>
-  <h3>The Reciprocal Time Window as a Precondition of the Recognition Obligation: Customary International Humanitarian Law and the Temporal Preconditions of Recognising Expressed Intention</h3>
-  <p class="meta">Nota tecnica — 18 agosto 2026</p>
+  <h3>HFA-TN-02 — The Reciprocal Time Window as a Precondition of the Recognition Obligation</h3>
+  <p class="meta">Nota tecnica — V6, 27 agosto 2026</p>
   <p>Recognition of an intention requires time on both sides of the exchange. This note calls that interval the reciprocal time window. "Reciprocal" here carries no sense of reciprocity of obligation: the duty analysed in this note binds a party irrespective of the conduct of any other, and nothing below is conditioned on the behaviour of an adversary. The term denotes only the two-sided temporal structure of the event — one party expresses, the other must be able to perceive and act — and the window is called reciprocal because it must be long enough for both sides of that exchange to occur.</p>
   <p>Because the obligation to recognise a person hors de combat already exists — under customary international humanitarian law, binding on all parties to armed conflict, and as codified in Article 41 of Additional Protocol I — the minimum window that makes recognition possible is the structural precondition of that obligation's exercisability, that is, of the practical ability to comply with it in the circumstances of use. Whether a system preserves that precondition can be verified and must be examined in whatever legal review applies to the weapon — including under Article 36 of Additional Protocol I where that provision applies, and under the corresponding national review requirements where it does not. Compressing the window below the threshold of exchange by design is therefore an examinable design decision, not a technical circumstance.</p>
   <div class="cite">
-    Giovanni Nardacci, 'The Reciprocal Time Window as a Precondition of the Recognition Obligation: Customary International Humanitarian Law and the Temporal Preconditions of Recognising Expressed Intention' (HFA Technical Note HFA-TN-02, 2026), Zenodo DOI 10.5281/zenodo.21224900.
+    Giovanni Nardacci, 'HFA-TN-02 — The Reciprocal Time Window as a Precondition of the Recognition Obligation' (HFA Technical Note HFA-TN-02, 2026), Zenodo DOI 10.5281/zenodo.21224900.
   </div>
   <a href="https://doi.org/10.5281/zenodo.21224900" target="_blank" class="download">📄 View on Zenodo</a>
   <hr>
