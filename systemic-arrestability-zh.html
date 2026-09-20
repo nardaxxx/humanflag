@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Systemic Arrestability – Human Flag</title>
-  <meta name="author" content="Human Flag Association">
-  <meta name="description" content="Paper II — Operator protection in machine safety law when machine speed exceeds human reaction: systemic arrestability as an interpretative standard under Directive 2006/42/EC, LSPro and OSHA.">
-  <link rel="canonical" href="https://www.humanflag.org/systemic-arrestability-zh.html">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Systemic Arrestability – Human Flag</title>
+<meta content="Human Flag Association" name="author"/>
+<meta content="Paper II — Operator protection in machine safety law when machine speed exceeds human reaction: systemic arrestability as an interpretative standard under Directive 2006/42/EC, LSPro and OSHA." name="description"/>
+<link href="https://www.humanflag.org/systemic-arrestability-zh.html" rel="canonical"/>
+<style>
     body { background: #000; color: #f2f2f2; font-family: Georgia, serif; max-width: 860px; margin: auto; padding: 2em; }
     h1 { color: #fff; font-size: 1.8em; }
     h2 { color: #fff; margin-top: 2em; }
@@ -26,57 +27,43 @@
   </style>
 </head>
 <body>
-  <!-- TRANSLATION SCAFFOLD — Chinese
+<!-- TRANSLATION SCAFFOLD — Chinese
        Replace the English text below with the Chinese translation.
        Then delete the "pending" line that follows this comment.
        To publish: add the same language bar to systemic-arrestability.html, point the
        link in index-zh.html here, and add this URL to sitemap.xml. -->
-  <p class="langbar"><a href="systemic-arrestability.html">English</a> · <a href="systemic-arrestability-it.html">Italiano</a> · <a href="systemic-arrestability-fr.html">Français</a> · <a href="systemic-arrestability-de.html">Deutsch</a> · <a href="systemic-arrestability-es.html">Español</a> · <a href="systemic-arrestability-pt.html">Português</a> · <a href="systemic-arrestability-ru.html">Русский</a> · <strong>中文</strong> · <a href="systemic-arrestability-ja.html">日本語</a></p>
-  <p class="pending">英文版本为权威文本。本译文为便利阅读而提供。如有任何不一致或解释上的分歧，以英文版本为准。</p>
-
-  <a href="index-zh.html" class="back">← Back to Human Flag</a>
-
-  <h1>Systemic Arrestability</h1>
-  <p class="meta">Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction</p>
-  <p class="meta">
-    Giovanni Nardacci — Founder, Human Flag Association<br>
-    UNGM Partner No. 6126 · humanflag.org<br>
-    Working Paper — V6, 27 August 2026
+<p class="langbar"><a href="systemic-arrestability.html">English</a> · <a href="systemic-arrestability-it.html">Italiano</a> · <a href="systemic-arrestability-fr.html">Français</a> · <a href="systemic-arrestability-de.html">Deutsch</a> · <a href="systemic-arrestability-es.html">Español</a> · <a href="systemic-arrestability-pt.html">Português</a> · <a href="systemic-arrestability-ru.html">Русский</a> · <strong>中文</strong> · <a href="systemic-arrestability-ja.html">日本語</a></p>
+<p class="pending">英文版本为权威文本。本译文为便利阅读而提供。如有任何不一致或解释上的分歧，以英文版本为准。</p>
+<a class="back" href="index-zh.html">← Back to Human Flag</a>
+<h1>Systemic Arrestability</h1>
+<p class="meta">Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction</p>
+<p class="meta">
+    Giovanni Nardacci — Founder, Human Flag Association<br/>
+    UNGM Partner No. 6126 · humanflag.org<br/>
+    Working Paper — V7, 20 September 2026 · Version DOI: 10.5281/zenodo.22858801
   </p>
+<hr/>
+<h2>Abstract</h2><p>机器安全法部分通过仪器（停止功能、紧急停止）保护操作员，其操作的前提是人类能够感知正在发生的危险，对其进行评估，并在伤害发生之前采取行动。这个假设是可以被检验的。它相当于危险允许的时间间隔和停止危险所需的时间窗口之间的比较。</p><p>可用间隔是从危险行为开始到其影响无法再被阻止的时间点。与之相对的是人类干预所需的窗口。如果该窗口长于可用间隔，则最后一层依赖于人为干预的保护架构根本无法提供保护。相反，停止的能力必须存在于一种机制中，该机制自身的窗口适合该间隔，并且不与产生危险的原因共享故障路径。</p><p>这种比较首先是从危害机制和反应生理学角度进行的，不涉及任何法律制度。欧盟机械法、瑞士产品安全法和美国职业安全法规都表明已经要求其产生的结果，但没有说明比较本身。同样的沉默贯穿于这些系统所遵循的国际标准中：停止机制的响应时间被详细标准化，危险允许的时间间隔也被详细标准化，而人为干预所需的窗口从未被统一为参考值。系统可抑制性的标准命名了这种比较，并将其置于可以针对特定配置进行演示的形式。它没有给现行法律增加任何义务。</p>
 
-  <hr>
 
-  <h2>Abstract</h2>
-  <p>机器安全法建立在一项基本原则之上：保护操作人员。在不同法律体系中，安全法规均要求机器的设计和运行应确保危险情况能在造成伤害之前停止。这种保护并非新的法律目标，而是已嵌入现行法的义务——第2006/42/EC号指令关于停止功能和紧急停止的要求（以及即将适用、明确涉及具有自主行为之机器的第(EU) 2023/1230号条例）、瑞士 LSPro（RS 930.11）规定的产品安全义务，以及 OSHA 关于操作人员保护的要求（29 CFR § 1910.212）。</p>
-  <p>本文主张，这种保护依赖于一项隐含的时间假设：操作人员保有切实机会去感知正在形成的危险、对其作出评估，并在损害发生前进行干预。对于传统机器，这一假设通常成立；但当机器产生具有作战意义的效果，其速度超过人类反应能力时，该假设可能失效。在这种情况下，对操作人员的法律保护在形式上仍然存在，但行使这种保护的实际条件却消失了。由此产生的问题并非缺乏监管，而是法律实效问题：现有义务仍然有效，却无法再仅依靠人的干预来实现。</p>
-  <p>为解决这一缺口，本文引入 Systemic Arrestability 概念：如果一个系统停止危险行动的能力，并不依赖于人类操作人员在该行动的时间窗口内完成感知、评估和干预，则该系统具有系统性可停止性。该概念不创设任何新的法律义务；它维护已经存在的义务的实际效力。通过对欧洲、瑞士和美国机器安全框架的比较分析，本文提出以 Systemic Arrestability 作为解释标准，从而在机器速度超过人类反应能力的条件下维持现有安全法的保护目的。</p>
 
-  <hr>
-
-  <h2>Cite As</h2>
-  <div class="cite">
+<hr/>
+<hr/><h2>Notes</h2><p>这个版本按因果顺序重申了论点。先进行比较推导，不参考任何法律制度；欧洲、瑞士和美国的框架随后被证明会强加其结果。一个间隔和必须适合其内部的窗口取代了早期的术语。独立性被添加为机制响应时间完全可测量的条件。如果不存在可接受的机制，则结果将被表述为无法产生的演示，而不是作为一个悬而未决的问题。早期版本的三个负面说明已被删除，每个说明均来自步骤。一个来自近程防御系统的说明性示例已被删除：它描述的间隔是交战序列的间隔，而不是本文测量的间隔。</p><p>取代版本 6。</p><h2>Cite As</h2>
+<div class="cite">
     Giovanni Nardacci, 'Systemic Arrestability: Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction' (Human Flag Association working paper, 2026), Zenodo DOI 10.5281/zenodo.20837150.
   </div>
-
-  <hr>
-
-  <h2>Download</h2>
-  <a href="systemic_arrestability.pdf" target="_blank" class="download">📄 Download PDF</a>
-  <a href="https://doi.org/10.5281/zenodo.20837150" target="_blank" class="download">📑 View on Zenodo</a>
-  <hr>
-
-  <h2>Keywords</h2>
-  <p class="keywords">operator safety · machine safety · stop function · emergency stop · human reaction time · legal effectiveness · systemic arrestability · Directive 2006/42/EC · Regulation (EU) 2023/1230 · LSPro RS 930.11 · OSHA 29 CFR § 1910.212</p>
-
-  <hr>
-
-  <h2>相关工作</h2>
-  <p>本文分析的时间结构并非民用机器安全法所独有。关于国际人道法和自主武器系统背景下的平行论证，参见：<a href="lawful-safeguards-zh.html">Lawful Operational Safeguards in AI Systems</a>（Paper I，2026）。两项分析的趋同表明，本文识别的实效问题是结构性的，而非特定于某一法律制度。<a href="hf-signal-01-zh.html">HF SIGNAL 01</a>（Paper III，2026）规定了一项机器可读的候选识别协议；<a href="technical-notes-zh.html">HFA Technical Note HFA-TN-02</a> 则将该时间标准扩展至投降识别。</p>
-
-  <hr>
-
-  <p class="meta"><em>This paper proposes systemic arrestability as an interpretative criterion within existing legal frameworks. It creates no new legal obligations and does not claim that any specific technical implementation is legally mandated.</em></p>
-  <p class="meta"><em>Human Flag Association — Bellinzona, Switzerland</em></p>
-
+<hr/>
+<h2>Download</h2>
+<a class="download" href="systemic_arrestability.pdf" target="_blank">📄 Download PDF</a>
+<a class="download" href="https://doi.org/10.5281/zenodo.20837150" target="_blank">📑 View on Zenodo</a>
+<hr/>
+<h2>Keywords</h2>
+<p class="keywords">operator safety · machine safety · stop function · emergency stop · human reaction time · legal effectiveness · systemic arrestability · Directive 2006/42/EC · Regulation (EU) 2023/1230 · LSPro RS 930.11 · OSHA 29 CFR § 1910.212</p>
+<hr/>
+<h2>相关工作</h2>
+<p>本文分析的时间结构并非民用机器安全法所独有。关于国际人道法和自主武器系统背景下的平行论证，参见：<a href="lawful-safeguards-zh.html">Lawful Operational Safeguards in AI Systems</a>（Paper I，2026）。两项分析的趋同表明，本文识别的实效问题是结构性的，而非特定于某一法律制度。<a href="hf-signal-01-zh.html">HF SIGNAL 01</a>（Paper III，2026）规定了一项机器可读的候选识别协议；<a href="technical-notes-zh.html">HFA Technical Note HFA-TN-02</a> 则将该时间标准扩展至投降识别。</p>
+<hr/>
+<p class="meta"><em>This paper proposes systemic arrestability as an interpretative criterion within existing legal frameworks. It creates no new legal obligations and does not claim that any specific technical implementation is legally mandated.</em></p>
+<p class="meta"><em>Human Flag Association — Bellinzona, Switzerland</em></p>
 </body>
 </html>
