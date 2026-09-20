@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HF SIGNAL 01 – Human Flag</title>
-  <meta name="author" content="Human Flag Association">
-  <meta name="description" content="Paper III — HF SIGNAL 01: a candidate surrender-recognition protocol (flag, optical and radio channels) proposed as a technical referent under Article 41 of Additional Protocol I.">
-  <link rel="canonical" href="https://www.humanflag.org/hf-signal-01-fr.html">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HF SIGNAL 01 – Human Flag</title>
+<meta content="Human Flag Association" name="author"/>
+<meta content="Paper III — HF SIGNAL 01: a candidate surrender-recognition protocol (flag, optical and radio channels) proposed as a technical referent under Article 41 of Additional Protocol I." name="description"/>
+<link href="https://www.humanflag.org/hf-signal-01-fr.html" rel="canonical"/>
+<style>
     body { background: #000; color: #f2f2f2; font-family: Georgia, serif; max-width: 860px; margin: auto; padding: 2em; }
     h1 { color: #fff; font-size: 1.8em; }
     h2 { color: #fff; margin-top: 2em; }
@@ -28,64 +29,63 @@
   </style>
 </head>
 <body>
-  <!-- TRANSLATION SCAFFOLD — French
+<!-- TRANSLATION SCAFFOLD — French
        Replace the English text below with the French translation.
        Then delete the "pending" line that follows this comment.
        To publish: add the same language bar to hf-signal-01.html, point the
        link in index-fr.html here, and add this URL to sitemap.xml. -->
-  <p class="langbar"><a href="hf-signal-01.html">English</a> · <a href="hf-signal-01-it.html">Italiano</a> · <strong>Français</strong> · <a href="hf-signal-01-de.html">Deutsch</a> · <a href="hf-signal-01-es.html">Español</a> · <a href="hf-signal-01-pt.html">Português</a> · <a href="hf-signal-01-ru.html">Русский</a> · <a href="hf-signal-01-zh.html">中文</a> · <a href="hf-signal-01-ja.html">日本語</a></p>
-  <p class="pending">La version anglaise constitue le texte faisant autorité. Cette traduction est fournie à des fins d’accessibilité. En cas de différence ou de divergence d’interprétation, la version anglaise prévaut.</p>
-  <a href="index-fr.html" class="back">← Back to Human Flag</a>
-  <h1>HF SIGNAL 01</h1>
-  <p class="meta">A Candidate Machine-Readable Protective Signal for Testing and Standardisation</p>
-  <p class="meta">
-    Giovanni Nardacci — Founder, Human Flag Association<br>
-    humanflag.org<br>
-    Working Paper — V4, 27 August 2026
+<p class="langbar"><a href="hf-signal-01.html">English</a> · <a href="hf-signal-01-it.html">Italiano</a> · <strong>Français</strong> · <a href="hf-signal-01-de.html">Deutsch</a> · <a href="hf-signal-01-es.html">Español</a> · <a href="hf-signal-01-pt.html">Português</a> · <a href="hf-signal-01-ru.html">Русский</a> · <a href="hf-signal-01-zh.html">中文</a> · <a href="hf-signal-01-ja.html">日本語</a></p>
+<p class="pending">La version anglaise constitue le texte faisant autorité. Cette traduction est fournie à des fins d’accessibilité. En cas de différence ou de divergence d’interprétation, la version anglaise prévaut.</p>
+<a class="back" href="index-fr.html">← Back to Human Flag</a>
+<h1>HF SIGNAL 01</h1>
+<p class="meta">A Candidate Machine-Readable Protective Signal for Testing and Standardisation</p>
+<p class="meta">
+    Giovanni Nardacci — Founder, Human Flag Association<br/>
+    humanflag.org<br/>
+    Working Paper — V6, 10 September 2026 · Version DOI: 10.5281/zenodo.22686696
   </p>
-  <hr>
-  <h2>Abstract</h2>
-  <p>L’interdiction d’attaquer une personne reconnue hors de combat est une règle du droit international humanitaire coutumier (Rule 47 de l’ICRC Customary IHL Study ; article 23(c) du Règlement de La Haye de 1907), qui lie toutes les parties à un conflit armé indépendamment de la ratification des traités. Pour les États parties au Protocole additionnel I, l’article 41 en fournit la formulation conventionnelle la plus claire, tandis que l’article 57 exige de ceux qui préparent ou décident une attaque qu’ils fassent tout ce qui est pratiquement possible pour vérifier que l’attaque demeure licite. Bien que ces obligations soient en vigueur depuis longtemps, les systèmes autonomes et semi-autonomes fonctionnant à la vitesse des machines créent un problème pratique : il n’existe aucune forme lisible par machine communément spécifiée par laquelle une intention de se rendre puisse être communiquée à de tels systèmes et reconnue par ceux-ci.</p>
-  <p>Le présent document présente HF SIGNAL 01, un protocole candidat de reconnaissance de la reddition conçu comme référent technique pour les expressions de reddition lisibles par machine. Le protocole propose deux modalités alternatives : une modalité visuelle passive, ne nécessitant aucun équipement, et une modalité électronique active comprenant deux canaux qui doivent être confirmés conjointement, un signal optique blanc pulsé et une signature radiofréquence. Le document ne revendique ni efficacité opérationnelle, ni adoption, ni statut juridique. Le protocole constitue un moyen supplémentaire d’exprimer l’intention de se rendre, jamais une condition de protection, et son absence n’autorise aucune inférence défavorable. Le document évalue plutôt la proposition au regard de critères de faisabilité préalablement définis pour les Lawful Operational Safeguards, notamment la maturité technologique, la latence, les jeux de données annotés et la validation indépendante.</p>
-  <p>L’évaluation est délibérément prudente. HF SIGNAL 01 existe actuellement comme candidat documenté publiquement, spécifié dans sa modalité active jusqu’au niveau de paramètres pouvant être testés et conservés dans un fichier protégé contre les atteintes à l’intégrité, tandis que les paramètres de la modalité passive restent en attente d’une détermination normative. Il ne dispose d’aucun détecteur validé, d’aucun jeu de données annoté, d’aucune latence mesurée ni d’aucune validation indépendante. Sa contribution actuelle est documentaire plutôt qu’opérationnelle. Le document soutient que l’existence d’une norme candidate accessible au public et protégée contre les atteintes à l’intégrité modifie le contexte factuel dans lequel les capacités de reconnaissance de la reddition peuvent être évaluées, transformant ce qui était auparavant décrit uniquement comme une impossibilité technique en une question documentée de choix de conception, d’examen et de validation.</p>
-  <p>Le document conclut en invitant à procéder à des essais techniques indépendants, à développer des jeux de données et à examiner la proposition dans les enceintes pertinentes du droit international humanitaire et de la gouvernance des armes autonomes.</p>
-  <hr>
-  <h2>The Signal</h2>
-  <div class="channels">
-    <p>HF SIGNAL 01 is a recognition signal with channels matched to who is emitting it. Its primary channel requires no technology at all:</p>
-    <p>• <strong>The flag</strong> — a white circle on a red field, raised or displayed by the <strong>unarmed human</strong>. Like the white flag, it can be produced by anyone, anywhere, with cloth and paint — but it is specified for machine readability.<br>
-    • <strong>Optical channel</strong> — 7 Hz pulsating white light, for <strong>equipped operators</strong> (vehicles, facilities, teams)<br>
+<hr/>
+<h2>Abstract</h2>
+<p>L’interdiction d’attaquer une personne reconnue hors de combat est une règle du droit international humanitaire coutumier (Rule 47 de l’ICRC Customary IHL Study ; article 23(c) du Règlement de La Haye de 1907), qui lie toutes les parties à un conflit armé indépendamment de la ratification des traités. Pour les États parties au Protocole additionnel I, l’article 41 en fournit la formulation conventionnelle la plus claire, tandis que l’article 57 exige de ceux qui préparent ou décident une attaque qu’ils fassent tout ce qui est pratiquement possible pour vérifier que l’attaque demeure licite. Bien que ces obligations soient en vigueur depuis longtemps, les systèmes autonomes et semi-autonomes fonctionnant à la vitesse des machines créent un problème pratique : il n’existe aucune forme lisible par machine communément spécifiée par laquelle une intention de se rendre puisse être communiquée à de tels systèmes et reconnue par ceux-ci.</p>
+<p>Le présent document présente HF SIGNAL 01, un protocole candidat de reconnaissance de la reddition conçu comme référent technique pour les expressions de reddition lisibles par machine. Le protocole propose deux modalités alternatives : une modalité visuelle passive, ne nécessitant aucun équipement, et une modalité électronique active comprenant deux canaux qui doivent être confirmés conjointement, un signal optique blanc pulsé et une signature radiofréquence. Le document ne revendique ni efficacité opérationnelle, ni adoption, ni statut juridique. Le protocole constitue un moyen supplémentaire d’exprimer l’intention de se rendre, jamais une condition de protection, et son absence n’autorise aucune inférence défavorable. Le document évalue plutôt la proposition au regard de critères de faisabilité préalablement définis pour les Lawful Operational Safeguards, notamment la maturité technologique, la latence, les jeux de données annotés et la validation indépendante.</p>
+<p>L’évaluation est délibérément prudente. HF SIGNAL 01 existe actuellement comme candidat documenté publiquement, spécifié dans sa modalité active jusqu’au niveau de paramètres pouvant être testés et conservés dans un fichier protégé contre les atteintes à l’intégrité, tandis que les paramètres de la modalité passive restent en attente d’une détermination normative. Il ne dispose d’aucun détecteur validé, d’aucun jeu de données annoté, d’aucune latence mesurée ni d’aucune validation indépendante. Sa contribution actuelle est documentaire plutôt qu’opérationnelle. Le document soutient que l’existence d’une norme candidate accessible au public et protégée contre les atteintes à l’intégrité modifie le contexte factuel dans lequel les capacités de reconnaissance de la reddition peuvent être évaluées, transformant ce qui était auparavant décrit uniquement comme une impossibilité technique en une question documentée de choix de conception, d’examen et de validation.</p>
+<p>Le document conclut en invitant à procéder à des essais techniques indépendants, à développer des jeux de données et à examiner la proposition dans les enceintes pertinentes du droit international humanitaire et de la gouvernance des armes autonomes.</p>
+<hr/>
+<h2>The Signal</h2>
+<div class="channels">
+<p>HF SIGNAL 01 is a recognition signal with channels matched to who is emitting it. Its primary channel requires no technology at all:</p>
+<p>• <strong>The flag</strong> — a white circle on a red field, raised or displayed by the <strong>unarmed human</strong>. Like the white flag, it can be produced by anyone, anywhere, with cloth and paint — but it is specified for machine readability.<br/>
+    • <strong>Optical channel</strong> — 7 Hz pulsating white light, for <strong>equipped operators</strong> (vehicles, facilities, teams)<br/>
     • <strong>Electronic channel</strong> — 144.0 MHz continuous FM tone, for <strong>equipped operators</strong></p>
-    <p>Same protocol, same meaning, different levels of access: bare hands or instruments. No one is excluded from the possibility of signalling — this is the humanitarian point. A surrender signal that requires equipment contradicts itself: the person surrendering is, by definition, the one who has laid everything down. This is why the primary channel is cloth and paint. The published technical specification documents the optical and radio channels; the flag is the human-side channel of the same architecture.</p>
-  </div>
-  <div class="note">
-    <strong>Technical parameters under independent review.</strong> Both channel parameters are published as documented reference values, not as validated operational specifications. The optical channel requires independent photobiological assessment: flash frequencies above 3 Hz can pose photosensitivity risks under certain luminance and viewing conditions. The radio channel falls within an internationally allocated amateur-radio band (144–146 MHz, with 144.000–144.025 MHz designated for satellite use in the IARU Region 1 band plan), and any transmission is subject to national authorization. Independent medical, regulatory and engineering validation is a precondition of any operational use — and is precisely the class of verification that a legal review under Article 36 AP I exists to perform.
+<p>Same protocol, same meaning, different levels of access: bare hands or instruments. No one is excluded from the possibility of signalling — this is the humanitarian point. A surrender signal that requires equipment contradicts itself: the person surrendering is, by definition, the one who has laid everything down. This is why the primary channel is cloth and paint. The published technical specification documents the optical and radio channels; the flag is the human-side channel of the same architecture.</p>
+</div>
+<div class="note">
+<strong>Technical parameters under independent review.</strong> Both channel parameters are published as documented reference values, not as validated operational specifications. The optical channel requires independent photobiological assessment: flash frequencies above 3 Hz can pose photosensitivity risks under certain luminance and viewing conditions. The radio channel falls within an internationally allocated amateur-radio band (144–146 MHz, with 144.000–144.025 MHz designated for satellite use in the IARU Region 1 band plan), and any transmission is subject to national authorization. Independent medical, regulatory and engineering validation is a precondition of any operational use — and is precisely the class of verification that a legal review under Article 36 AP I exists to perform.
     <p><strong>Frequency reference value.</strong> The 144.0 MHz value indicated in the specification is a documented reference value, not an allocation. It falls within the 144.000–144.025 MHz segment designated for satellite use in the IARU Region 1 band plan; selection of an operational frequency requires coordination with the applicable national authorities and band plans. This determination is part of the independent regulatory validation identified in this paper as a precondition of any operational use.</p>
-  </div>
-  <hr>
-  <h2>Cite As</h2>
-  <div class="cite">
+</div>
+<hr/>
+<hr/><h2>Notes</h2><p class="note">Remarque — Architecture de la modalité HF SIGNAL 01. Dans la version 4, les références au HF SIGNAL 01 en tant que « signal double canal » font spécifiquement référence à la modalité électronique active. HF SIGNAL 01 comprend deux modalités alternatives : une modalité visuelle passive et une modalité électronique active à double canal. L'exigence selon laquelle les canaux optiques et radio doivent être confirmés s'applique uniquement à la modalité électronique active.</p><p>La modalité visuelle passive était déjà présente dans les documents du référentiel HF SIGNAL 01 avant son incorporation explicite dans le texte du document de travail. Les références dans le résumé au concept comme « entièrement spécifié » doivent être lues conjointement avec les qualifications techniques de l'article : la modalité électronique active est paramétriquement spécifiée à un niveau testable, tandis que la modalité visuelle passive est définie architecturalement et reste soumise à un paramétrage et une validation plus approfondis.</p><p>HF SIGNAL 01 est un signal de reconnaissance dont les canaux correspondent à celui qui l'émet. Son canal principal ne nécessite aucune technologie :</p><p>• Le drapeau — un cercle blanc sur fond rouge, hissé ou déployé par l'humain non armé. Comme le drapeau blanc, il peut être fabriqué par n’importe qui, n’importe où, avec du tissu et de la peinture – mais il est spécifié pour une lisibilité mécanique. • Canal optique — Lumière blanche pulsée de 7 Hz, pour les opérateurs équipés (véhicules, installations, équipes) • Canal électronique — Tonalité FM continue de 144,0 MHz, pour les opérateurs équipés</p><p>Même protocole, même signification, différents niveaux d'accès : mains nues ou instruments. Personne n’est exclu de la possibilité de signaler – c’est le point humanitaire. Un signal de reddition qui nécessite un équipement se contredit : celui qui se rend est, par définition, celui qui a tout déposé. C’est pourquoi le canal principal est le tissu et la peinture. La spécification technique publiée documente les canaux optiques et radio ; le drapeau est le canal côté humain de la même architecture.</p><p>Valeur de référence de fréquence. La valeur 144,0 MHz indiquée dans la spécification est une valeur de référence documentée et non une allocation. Il fait partie du segment 144 000-144 025 MHz désigné pour l'utilisation par satellite dans le plan de bande de la région 1 de l'IARU ; La sélection d’une fréquence opérationnelle nécessite une coordination avec les autorités nationales et les plans de répartition des bandes concernés. Cette détermination fait partie de la validation réglementaire indépendante identifiée dans ce document comme condition préalable à toute utilisation opérationnelle.</p><h2>Cite As</h2>
+<div class="cite">
     Giovanni Nardacci, 'HF SIGNAL 01: A Candidate Machine-Readable Protective Signal for Testing and Standardisation' (2026), Zenodo DOI 10.5281/zenodo.21183137.
   </div>
-  <hr>
-  <h2>Access</h2>
-  <a href="https://doi.org/10.5281/zenodo.21183137" target="_blank" class="download">📄 View on Zenodo</a>
-  <a href="https://github.com/nardaxxx/hf-signal-01" target="_blank" class="download">⚙️ GitHub Repository</a>
-  <hr>
-  <h2 id="architecture-note">Architecture Note</h2>
-  <p><em>HF SIGNAL 01 — Architecture Note (Human Flag Association)</em> (V4, 27 August 2026). This note states, in one place, the architecture of HF SIGNAL 01 as the Association has published it. It amends no deposited document, alters no identifier, and asserts no obligation. HF SIGNAL 01 does not replace the white flag; it translates it. The gesture has not changed; the recipient has: a machine does not see a surrender; it detects or fails to detect a signal, and it shares no code with the white flag. HF SIGNAL 01 is a single protective function expressed through two modalities of differing accessibility: a passive visual modality — a white disc on a red field, requiring no power, equipment, licence or emission, and available to a person who has nothing — and an active electronic modality, a pulsating white light at 7 Hz together with a continuous FM tone, which presupposes equipment. The modalities are alternative expressions of the same meaning, not a conjunction; requiring all of them would exclude precisely those least equipped to signal. A confirmed signal calls for suspension of engagement and verification of status; it is never a necessary condition of protection, and its absence permits no adverse inference. The note also records the questions that remain open, including carrier frequency, emission risk, photosensitivity, separability from the protective emblems of the Geneva Conventions, and the parameters of the passive symbol, whose geometry and chromaticity are a placeholder awaiting normative determination.</p>
-  <div class="cite">
+<hr/>
+<h2>Access</h2>
+<a class="download" href="https://doi.org/10.5281/zenodo.21183137" target="_blank">📄 View on Zenodo</a>
+<a class="download" href="https://github.com/nardaxxx/hf-signal-01" target="_blank">⚙️ GitHub Repository</a>
+<hr/>
+<h2 id="architecture-note">Architecture Note</h2><p>Abstrait</p><p>Cette note présente, en un seul endroit, l'architecture de HF SIGNAL 01 telle que l'Association l'a publiée. Il ne modifie aucun document déposé, n'altère aucun identifiant et ne fait valoir aucune obligation. HF SIGNAL 01 ne remplace pas le drapeau blanc ; ça le traduit. Le geste n'a pas changé ; le destinataire a : une machine ne voit pas de remise ; il détecte ou ne parvient pas à détecter un signal et ne partage aucun code avec le drapeau blanc.</p><p>HF SIGNAL 01 est une fonction de protection unique exprimée à travers deux modalités d'accessibilité différente : une modalité visuelle passive — un disque blanc sur fond rouge, ne nécessitant aucune alimentation, équipement, licence ou émission, et accessible à une personne qui n'a rien — et une modalité électronique active, une lumière blanche pulsée à 7 Hz associée à une tonalité FM continue, qui présuppose un équipement. Les modalités sont des expressions alternatives du même sens, et non une conjonction ; les exiger tous exclurait précisément ceux qui sont les moins équipés pour signaler. Un signal confirmé appelle à la suspension de l’engagement et à la vérification du statut ; ce n’est jamais une condition nécessaire de protection, et son absence ne permet aucune conclusion défavorable.</p><p>La note enregistre également les questions qui restent ouvertes, notamment la fréquence porteuse, le risque d'émission, la photosensibilité, la séparabilité des emblèmes protecteurs des Conventions de Genève et les paramètres du symbole passif, dont la géométrie et la chromaticité sont un espace réservé en attente de détermination normative.</p><p class="meta">Version V4 · 27 August 2026 · Version DOI: 10.5281/zenodo.22133423</p>
+<div class="cite">
     Giovanni Nardacci, 'HF SIGNAL 01 — Architecture Note (Human Flag Association)' (2026), Zenodo DOI 10.5281/zenodo.21809826.
   </div>
-  <a href="https://doi.org/10.5281/zenodo.21809826" target="_blank" class="download">📄 View on Zenodo</a>
-  <hr>
-  <h2>Keywords</h2>
-  <p class="keywords">International Humanitarian Law · Autonomous Weapons Systems · Lethal Autonomous Weapons Systems · Article 41 · Article 57 · Surrender Recognition · Machine-Readable Signal</p>
-  <hr>
-  <h2>Travaux connexes</h2>
-  <p>HF SIGNAL 01 applique les critères de faisabilité élaborés dans : <a href="lawful-safeguards-fr.html">Lawful Operational Safeguards in AI Systems</a> (Paper I) et <a href="systemic-arrestability-fr.html">Systemic Arrestability</a> (Paper II). La condition temporelle préalable qui détermine si un tel signal peut être reconnu est développée dans la <a href="technical-notes-fr.html">note technique HFA HFA-TN-02</a>.</p>
-  <hr>
-  <p class="meta"><em>The working paper is released under CC BY 4.0 (Zenodo). The protocol files are released under CC BY-NC-ND 4.0 — free for personal, civilian and humanitarian use; commercial and institutional implementation requires a written license agreement with the Human Flag Association. Human Flag Association — Bellinzona, Switzerland.</em></p>
-  <p class="meta"><em>The paper does not claim operational effectiveness, adoption, or legal status.</em></p>
+<a class="download" href="https://doi.org/10.5281/zenodo.21809826" target="_blank">📄 View on Zenodo</a>
+<hr/>
+<h2>Keywords</h2>
+<p class="keywords">International Humanitarian Law · Autonomous Weapons Systems · Lethal Autonomous Weapons Systems · Article 41 · Article 57 · Surrender Recognition · Machine-Readable Signal</p>
+<hr/>
+<h2>Travaux connexes</h2>
+<p>HF SIGNAL 01 applique les critères de faisabilité élaborés dans : <a href="lawful-safeguards-fr.html">Lawful Operational Safeguards in AI Systems</a> (Paper I) et <a href="systemic-arrestability-fr.html">Systemic Arrestability</a> (Paper II). La condition temporelle préalable qui détermine si un tel signal peut être reconnu est développée dans la <a href="technical-notes-fr.html">note technique HFA HFA-TN-02</a>.</p>
+<hr/>
+<p class="meta"><em>The working paper is released under CC BY 4.0 (Zenodo). The protocol files are released under CC BY-NC-ND 4.0 — free for personal, civilian and humanitarian use; commercial and institutional implementation requires a written license agreement with the Human Flag Association. Human Flag Association — Bellinzona, Switzerland.</em></p>
+<p class="meta"><em>The paper does not claim operational effectiveness, adoption, or legal status.</em></p>
 </body>
 </html>
