@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lawful Operational Safeguards – Human Flag</title>
-  <meta name="author" content="Human Flag Association">
-  <meta name="description" content="Paper I — Die Erkennung der Kapitulation als Voraussetzung für die Wirksamkeit des gewohnheitsrechtlichen Verbots, Personen hors de combat anzugreifen, und ihre Prüfung im Rahmen der Waffenprüfung">
-  <link rel="canonical" href="https://www.humanflag.org/lawful-safeguards-de.html">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lawful Operational Safeguards – Human Flag</title>
+<meta content="Human Flag Association" name="author"/>
+<meta content="Paper I — Die Erkennung der Kapitulation als Voraussetzung für die Wirksamkeit des gewohnheitsrechtlichen Verbots, Personen hors de combat anzugreifen, und ihre Prüfung im Rahmen der Waffenprüfung" name="description"/>
+<link href="https://www.humanflag.org/lawful-safeguards-de.html" rel="canonical"/>
+<style>
     body { background: #000; color: #f2f2f2; font-family: Georgia, serif; max-width: 860px; margin: auto; padding: 2em; }
     h1 { color: #fff; font-size: 1.8em; }
     h2 { color: #fff; margin-top: 2em; }
@@ -28,44 +29,44 @@
   </style>
 </head>
 <body>
-  <!-- TRANSLATION SCAFFOLD — German
+<!-- TRANSLATION SCAFFOLD — German
        Replace the English text below with the German translation.
        Then delete the "pending" line that follows this comment.
        To publish: add the same language bar to lawful-safeguards.html, point the
        link in index-de.html here, and add this URL to sitemap.xml. -->
-  <p class="langbar"><a href="lawful-safeguards.html">English</a> · <a href="lawful-safeguards-it.html">Italiano</a> · <a href="lawful-safeguards-fr.html">Français</a> · <strong>Deutsch</strong> · <a href="lawful-safeguards-es.html">Español</a> · <a href="lawful-safeguards-pt.html">Português</a> · <a href="lawful-safeguards-ru.html">Русский</a> · <a href="lawful-safeguards-zh.html">中文</a> · <a href="lawful-safeguards-ja.html">日本語</a></p>
-  <p class="pending">Die englischsprachige Fassung ist der maßgebliche Text. Diese Übersetzung wird aus Gründen der Zugänglichkeit bereitgestellt. Bei Abweichungen oder unterschiedlichen Auslegungen hat die englische Fassung Vorrang.</p>
-  <a href="index-de.html" class="back">← Back to Human Flag</a>
-  <h1>Lawful Operational Safeguards in AI Systems</h1>
-  <p class="meta">Surrender Recognition, Compliance Architecture, and International Humanitarian Law</p>
-  <p class="meta">
-    Giovanni Nardacci — Founder, Human Flag Association<br>
-    humanflag.org<br>
-    Working Paper — V6, 27 August 2026
+<p class="langbar"><a href="lawful-safeguards.html">English</a> · <a href="lawful-safeguards-it.html">Italiano</a> · <a href="lawful-safeguards-fr.html">Français</a> · <strong>Deutsch</strong> · <a href="lawful-safeguards-es.html">Español</a> · <a href="lawful-safeguards-pt.html">Português</a> · <a href="lawful-safeguards-ru.html">Русский</a> · <a href="lawful-safeguards-zh.html">中文</a> · <a href="lawful-safeguards-ja.html">日本語</a></p>
+<p class="pending">Die englischsprachige Fassung ist der maßgebliche Text. Diese Übersetzung wird aus Gründen der Zugänglichkeit bereitgestellt. Bei Abweichungen oder unterschiedlichen Auslegungen hat die englische Fassung Vorrang.</p>
+<a class="back" href="index-de.html">← Back to Human Flag</a>
+<h1>Lawful Operational Safeguards in AI Systems</h1>
+<p class="meta">Surrender Recognition, Compliance Architecture, and International Humanitarian Law</p>
+<p class="meta">
+    Giovanni Nardacci — Founder, Human Flag Association<br/>
+    humanflag.org<br/>
+    Working Paper — V8, 20 September 2026 · Version DOI: 10.5281/zenodo.22858777
   </p>
-  <hr>
-  <h2>Abstract</h2>
-  <p>Das Verbot, eine als hors de combat erkannte Person anzugreifen, ist eine Regel des humanitären Völkergewohnheitsrechts, die in Rule 47 der ICRC Customary IHL Study zum Ausdruck kommt und historisch in Artikel 23(c) der Haager Landkriegsordnung von 1907 niedergelegt ist. Es bindet alle Parteien eines bewaffneten Konflikts unabhängig von der Ratifikation eines Vertrags. Das Verbot schützt eine Person, die sich ergeben hat oder anderweitig hors de combat ist; seine praktische Wirksamkeit setzt voraus, dass eine Absicht zur Ergebung, wenn sie entsteht, ausgedrückt und wahrgenommen sowie in ein Unterlassen des Angriffs umgesetzt werden kann, bevor die Gewaltanwendung unumkehrbar wird. Ist ein System für den Einsatz gegen Personen unter Umständen bestimmt, unter denen eine Ergebung vernünftigerweise vorhersehbar ist, kann die Einhaltung des Rechts nicht zuverlässig von einem operativen Prozess abhängen, der keine praktische Möglichkeit bietet, dass ein Ergebungssignal vor diesem Zeitpunkt Einfluss auf den Angriff nimmt. Der Schutzstatus kann eintreten; der operative Prozess kann dennoch außerstande bleiben, rechtzeitig darauf zu reagieren. Diese Unfähigkeit ist kein im Einsatz auftretender Umstand. Sie wird im Voraus durch die Konstruktion festgelegt.</p>
-  <p>Für Vertragsstaaten des Zusatzprotokolls I enthält Artikel 41 die klarste vertragliche Formulierung des Verbots und einen internen Maßstab der Erkennbarkeit: Der Schutz knüpft nicht nur an die tatsächliche Erkennung an, sondern auch an das, was unter den Umständen hätte erkannt werden müssen. Artikel 57 sieht einschlägige Vorsorgepflichten vor, darunter die Pflicht, einen Angriff abzubrechen oder auszusetzen, wenn erkennbar wird, dass das Ziel kein militärisches Ziel ist oder besonderen Schutz genießt. Artikel 36 stellt das Verfahren bereit, in dem die Frage im Stadium der Prüfung, Entwicklung, Beschaffung oder Einführung untersucht werden muss. Für Nichtvertragsstaaten bleiben die materiellen gewohnheitsrechtlichen Pflichten anwendbar; ob und in welchem förmlichen Verfahren das entsprechende Systemrisiko geprüft wird, hängt vom innerstaatlichen Recht, der Waffenprüfungspolitik, dem Beschaffungsrahmen oder den militärischen Weisungen des Staates ab. Gewohnheitsrechtliche Vorsorgepflichten bleiben für die materielle Bewertung relevant, werden hier jedoch nicht so behandelt, als schüfen sie ein universelles, Artikel 36 gleichwertiges Verfahren.</p>
-  <p>Dieses Papier vertritt die Auffassung, dass die Fähigkeit zur Erkennung einer Ergebung, verstanden als Wahrung eines Recognition Window, keine neue Verpflichtung, sondern eine Wirksamkeitsbedingung für Verpflichtungen ist, die die Parteien seit mehr als einem Jahrhundert binden. Das Recognition Window ist ein analytisches und überprüfbares Maß dafür, ob der operative Prozess genügend Zeit lässt, damit ein Ergebungssignal, wenn es entsteht, vor der Unumkehrbarkeit der Gewaltanwendung Einfluss auf den Angriff nehmen kann; das Papier behandelt dieses Zeitfenster nicht als eigenständig feststehende Regel des Gewohnheitsrechts. Es formuliert eine konkrete These: Würde der vorhersehbare normale Einsatz eines Systems Personen erfassen, die unter den Umständen als hors de combat erkannt werden müssten, muss die Prüfung untersuchen, ob das System die praktische Möglichkeit der Rechtsbefolgung wahrt; und der systematische Ausschluss technisch realisierbarer, für diese Frage relevanter Schutzvorkehrungen erfordert eine dokumentierte Begründung statt Schweigen.</p>
-  <hr>
-  <h2>Cite As</h2>
-  <div class="cite">
+<hr/>
+<h2>Abstract</h2><p>Das Verbot, eine Person außer Gefecht anzugreifen, ist eine Regel des humanitären Völkergewohnheitsrechts, die in Regel 47 der Studie des Internationalen Roten Kreuzes zum humanitären Völkerrecht zum Ausdruck kommt und historisch in Artikel 23 Buchstabe c der Haager Regeln zum Ausdruck kommt. Seine praktische Wirkungsweise setzt voraus, dass die Absicht zur Kapitulation dort, wo sie entsteht, zum Ausdruck gebracht, wahrgenommen und in die Zurückhaltung des Angriffs umgesetzt werden kann, bevor Gewalt unumkehrbar wird.</p><p>In diesem Artikel wird argumentiert, dass die Einhaltung dieses Intervalls – des Anerkennungsfensters – keine neue Verpflichtung, sondern eine Bedingung für die Wirksamkeit von Verpflichtungen ist, die die Parteien seit über einem Jahrhundert binden. Damit gehen drei weitere Bedingungen einher, die jeweils vor dem Einsatz und nicht vor Ort festgelegt werden. Das System muss über eine Darstellung dessen verfügen, was es angreift, sodass eine Änderung des geschützten Status erfolgen kann. Wo kein solcher Zustand existiert, hat ein Hinweis, der rechtzeitig eintrifft, keine Auswirkung. Die Funktion, die die Änderung registriert, darf nicht von der Verarbeitungskette abhängen, die zur Engagement-Entscheidung geführt hat, da der Fehler, der die Notwendigkeit zur Erkennung verursacht, andernfalls die Erkennung unterdrücken kann. Und die Rekonstruierbarkeit muss vor dem Einsatz gewährleistet sein, damit die Compliance auch nach dem Einsatz überprüfbar bleibt.</p><p>Wenn bei der vorhersehbaren normalen Nutzung eines Systems Personen involviert wären, die unter den gegebenen Umständen als Kriegsdienstleistende anerkannt werden sollten, muss bei der Überprüfung geprüft werden, ob das System die praktische Möglichkeit der Einhaltung gewährleistet. Der systematische Ausschluss technisch erreichbarer Garantien, die für diese Frage relevant sind, ist eine Entscheidung, die das Gesetz über die Instrumente überprüfen kann und die dort, wo eine Verfahrensregelung Anwendung findet, aktenkundig zu begründen ist.</p>
+
+
+
+<hr/>
+<hr/><h2>Notes</h2><p>Version 8 verfeinert Version 7, ohne deren Struktur zu ändern. Die Bedingung der Rekonstruierbarkeit wird in einem Satz dargelegt und liegt in der Akquisition und nicht in der Untersuchung: Ein System, dessen Architektur weder den relevanten Status darstellt noch die relevanten Ereignisse beibehält, kann nach dem Ereignis nicht rekonstruierbar gemacht werden, und für Staaten, die an Artikel 36 gebunden sind, unterstützen die Leitlinien des IKRK zur rechtlichen Überprüfung denselben Punkt. Abschnitt VII wiederholt dieses Material nicht mehr und befasst sich stattdessen mit zwei Grenzfällen: Konfigurationen, in denen kein nutzbares Fenster vorhanden ist, und Systeme, die außerhalb einer konventionellen Produktionskette montiert werden, bei denen die relevanten Entscheidungen – Bauanweisung, Lieferung von Hardware und Software, Anstellung von Beschäftigung – identifizierbar und vorausschauend bleiben.</p><p>Korrekturen: Als Grundlage der bisher aus der Systemarchitektur abgeleiteten Repräsentationsbedingung wird nun Regel 47 angegeben; Im Querverweis zur Maschinensicherheit wird der Schutz nicht mehr so ​​behandelt, als ob er auf derselben zeitlichen Annahme beruht, sondern der Schutz ist der Kontrastfall, bei dem eine Exposition verhindert wird. die Beschreibung des US-Rechtsprüfungsverfahrens wird präziser dargelegt; und ein verbleibender Hinweis auf die Abfolge von Nahkampfwaffensystemen wurde entfernt.</p><p>Ersetzt Version 7 (September 2026). Begleitanalyse: Systemic Arrestability (Paper II), Zenodo-Konzept DOI 10.5281/zenodo.20837150.</p><h2>Cite As</h2>
+<div class="cite">
     Giovanni Nardacci, 'Lawful Operational Safeguards in AI Systems: Surrender Recognition, Compliance Architecture, and International Humanitarian Law' (2026), Zenodo DOI 10.5281/zenodo.21932439.
   </div>
-  <hr>
-  <h2>Download</h2>
-  <a href="HF_Paper_LawfulSafeguards.pdf" target="_blank" class="download">📄 Download PDF</a>
-  <a href="https://doi.org/10.5281/zenodo.21932439" target="_blank" class="download">📑 View on Zenodo</a>
-  <hr>
-  <h2>Keywords</h2>
-  <p class="keywords">International Humanitarian Law · Autonomous Weapons · AI Governance · Lawful Operational Safeguards · Surrender Recognition · Meaningful Human Control · Temporal Compression · Defence Procurement · IHL Compliance Architecture · Article 36 AP I · Article 41 AP I · Article 57 AP I</p>
-  <hr>
-  <h2>Verwandte Arbeiten</h2>
-  <p>Die in diesem Papier untersuchte zeitliche Struktur ist nicht auf das humanitäre Völkerrecht beschränkt. Zum parallelen Argument im zivilen Maschinensicherheitsrecht siehe: <a href="systemic-arrestability-de.html">Systemic Arrestability: Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction</a> (Paper II, 2026), Zenodo DOI 10.5281/zenodo.20837150.</p>
-  <p>Die hier entwickelten Machbarkeitskriterien werden in <a href="hf-signal-01-de.html">HF SIGNAL 01</a> (Paper III, 2026), Zenodo DOI 10.5281/zenodo.21183137, auf ein Kandidatenprotokoll zur Erkennung angewandt und in der <a href="technical-notes-de.html">HFA-Reihe technischer Anmerkungen</a> erweitert.</p>
-  <hr>
-  <p class="meta"><em>Diese Arbeit schlägt einen analytischen Rahmen vor, der auf dem in Abschnitt II untersuchten gewohnheitsrechtlichen Verbot und auf den Vertragsbestimmungen beruht, die dieses Verbot für die durch sie gebundenen Staaten festschreiben; sie beansprucht weder, umstrittene Fragen der Vertragsauslegung zu klären, noch verbindliche Verhaltensnormen über diejenigen hinaus festzulegen, welche die angeführten Bestimmungen selbst auferlegen.</em></p>
-  <p class="meta"><em>Human Flag Association — Bellinzona, Switzerland</em></p>
+<hr/>
+<h2>Download</h2>
+<a class="download" href="HF_Paper_LawfulSafeguards.pdf" target="_blank">📄 Download PDF</a>
+<a class="download" href="https://doi.org/10.5281/zenodo.21932439" target="_blank">📑 View on Zenodo</a>
+<hr/>
+<h2>Keywords</h2>
+<p class="keywords">International Humanitarian Law · Autonomous Weapons · AI Governance · Lawful Operational Safeguards · Surrender Recognition · Meaningful Human Control · Temporal Compression · Defence Procurement · IHL Compliance Architecture · Article 36 AP I · Article 41 AP I · Article 57 AP I</p>
+<hr/>
+<h2>Verwandte Arbeiten</h2>
+<p>Die in diesem Papier untersuchte zeitliche Struktur ist nicht auf das humanitäre Völkerrecht beschränkt. Zum parallelen Argument im zivilen Maschinensicherheitsrecht siehe: <a href="systemic-arrestability-de.html">Systemic Arrestability: Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction</a> (Paper II, 2026), Zenodo DOI 10.5281/zenodo.20837150.</p>
+<p>Die hier entwickelten Machbarkeitskriterien werden in <a href="hf-signal-01-de.html">HF SIGNAL 01</a> (Paper III, 2026), Zenodo DOI 10.5281/zenodo.21183137, auf ein Kandidatenprotokoll zur Erkennung angewandt und in der <a href="technical-notes-de.html">HFA-Reihe technischer Anmerkungen</a> erweitert.</p>
+<hr/>
+<p class="meta"><em>Diese Arbeit schlägt einen analytischen Rahmen vor, der auf dem in Abschnitt II untersuchten gewohnheitsrechtlichen Verbot und auf den Vertragsbestimmungen beruht, die dieses Verbot für die durch sie gebundenen Staaten festschreiben; sie beansprucht weder, umstrittene Fragen der Vertragsauslegung zu klären, noch verbindliche Verhaltensnormen über diejenigen hinaus festzulegen, welche die angeführten Bestimmungen selbst auferlegen.</em></p>
+<p class="meta"><em>Human Flag Association — Bellinzona, Switzerland</em></p>
 </body>
 </html>
