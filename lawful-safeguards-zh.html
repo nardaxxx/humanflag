@@ -24,47 +24,40 @@
     .note { background: #1a1a1a; border: 1px solid #333; padding: 1em 1.5em; margin: 1.5em 0; font-size: 0.95em; color: #ccc; }
     .note ul { line-height: 1.6; }
     .langbar { margin: 0 0 1em; font-size: 0.9em; text-align: left; }
-    .pending { margin: 0 0 1.5em; padding: 0.6em 1em; border-left: 3px solid #66ccff; background: #111; color: #ccc; font-style: italic; font-size: 0.9em; text-align: left; }
 
   </style>
 </head>
 <body>
-<!-- TRANSLATION SCAFFOLD — Chinese
-       Replace the English text below with the Chinese translation.
-       Then delete the "pending" line that follows this comment.
-       To publish: add the same language bar to lawful-safeguards.html, point the
-       link in index-zh.html here, and add this URL to sitemap.xml. -->
 <p class="langbar"><a href="lawful-safeguards.html">English</a> · <a href="lawful-safeguards-it.html">Italiano</a> · <a href="lawful-safeguards-fr.html">Français</a> · <a href="lawful-safeguards-de.html">Deutsch</a> · <a href="lawful-safeguards-es.html">Español</a> · <a href="lawful-safeguards-pt.html">Português</a> · <a href="lawful-safeguards-ru.html">Русский</a> · <strong>中文</strong> · <a href="lawful-safeguards-ja.html">日本語</a></p>
-<p class="pending">英文版本为权威文本。本译文为便利阅读而提供。如有任何不一致或解释上的分歧，以英文版本为准。</p>
-<a class="back" href="index-zh.html">← Back to Human Flag</a>
-<h1>Lawful Operational Safeguards in AI Systems</h1>
-<p class="meta">Surrender Recognition, Compliance Architecture, and International Humanitarian Law</p>
+<a class="back" href="index-zh.html">← 返回 Human Flag</a>
+<h1>人工智能系统中的合法运行保障</h1>
+<p class="meta">投降识别、合规架构与国际人道法</p>
 <p class="meta">
     Giovanni Nardacci — Founder, Human Flag Association<br/>
     humanflag.org<br/>
-    Working Paper — V8, 20 September 2026 · Version DOI: 10.5281/zenodo.22858777
+    Working Paper — V9, 23 September 2026 · Concept DOI: 10.5281/zenodo.21932439
   </p>
 <hr/>
-<h2>Abstract</h2><p>禁止攻击失去战斗力的人是习惯国际人道法的一项规则，反映在红十字国际委员会习惯国际人道法研究的第 47 条中，并在《海牙章程》第 23(c) 条中得到了历史性的表述。其实际操作的前提是，一旦出现投降意图，就可以在武力变得不可逆转之前表达、感知并转化为停止攻击。</p><p>本文认为，保留这一间隔（即承认窗口）并不是一项新义务，而是一个多世纪以来约束当事人的义务的有效性条件。随之而来的还有另外三个条件，每个条件都是在部署之前而不是在现场固定的。系统必须保存其正在参与的内容的表示，可以对受保护状态的更改进行操作；如果不存在这样的状态，则及时到达的指示无需采取任何行动。注册变更的函数不得依赖于产生参与决策的处理链，因为产生识别需求的错误可能会抑制识别。如果要在部署后仍可检查合规性，则必须在部署前提供可重构性。</p><p>如果系统可预见的正常使用会涉及在这种情况下应被视为失去战斗力的人员，则审查必须审查该系统是否保留了合规的实际可能性。系统地排除与该问题相关的技术上可实现的保障措施是一项法律具有审查手段的决定，并且在适用程序制度的情况下，该决定应记录在案。</p>
+<h2>摘要</h2><p>禁止攻击失去战斗力的人是习惯国际人道法的一项规则，反映在红十字国际委员会习惯国际人道法研究的第 47 条中，并在《海牙章程》第 23(c) 条中得到了历史性的表述。其实际操作的前提是，一旦出现投降意图，就可以在武力变得不可逆转之前表达、感知并转化为停止攻击。</p><p>本文认为，保留这一间隔（即承认窗口）并不是一项新义务，而是一个多世纪以来约束当事人的义务的有效性条件。随之而来的还有另外三个条件，每个条件都是在部署之前而不是在现场固定的。系统必须保存其正在参与的内容的表示，可以对受保护状态的更改进行操作；如果不存在这样的状态，则及时到达的指示无需采取任何行动。注册变更的函数不得依赖于产生参与决策的处理链，因为产生识别需求的错误可能会抑制识别。如果要在部署后仍可检查合规性，则必须在部署前提供可重构性。</p><p>如果系统可预见的正常使用会涉及在这种情况下应被视为失去战斗力的人员，则审查必须审查该系统是否保留了合规的实际可能性。系统地排除与该问题相关的技术上可实现的保障措施是一项法律具有审查手段的决定，并且在适用程序制度的情况下，该决定应记录在案。</p>
 
 
 
 <hr/>
-<hr/><h2>Notes</h2><p>版本 8 改进了版本 7，但没有改变其结构。可重建性条件在一个命题中得到阐述，位于获取而非调查中：其架构既不代表相关状态也不保留相关事件的系统不能在事件发生后重建，对于受第36条约束的国家，红十字国际委员会关于法律审查的指导也支持同样的观点。第七节不再重复这些材料，现在讨论两种边界情况：不存在可用窗口的配置，以及在传统生产链之外组装的系统，其中相关决策（订购施工、供应硬件和软件、订购就业）仍然是可识别的和预先的。</p><p>更正：现在给出规则 47 作为代表性条件的基础，该条件之前是从系统架构中导出的；机器安全交叉引用不再将防护视为基于相同的时间假设，防护是防止暴露的对比情况；对美国法律审查程序的描述更加准确；对近距离武器系统交战排序的剩余引用已被删除。</p><p>取代版本 7（2026 年 9 月）。配套分析：系统性逮捕（论文 II），Zenodo 概念 DOI 10.5281/zenodo.20837150。</p><h2>Cite As</h2>
+<h2>说明</h2><p>第 9 版以时间术语而非行为主体术语表述该标准。原题为“人类控制的压缩”的 IV.C 节现称“时间不对称与窗口关闭”。决策过程中存在人类仅是与该问题相关的证据，并非标准本身。</p><p>II.C 节明确，克制义务属于指挥官并在现场履行，而能否履行该义务早在选择手段时就已确定。全文还统一使用“检测延迟”和“法律审查”等术语。</p><p>取代 2026 年 9 月的第 8 版。相关分析：Systemic Arrestability（Paper II），Zenodo 概念 DOI 10.5281/zenodo.20837150。相关工作：HFA-TN-04，Zenodo 概念 DOI 10.5281/zenodo.22275485。</p><h2>引用方式</h2>
 <div class="cite">
-    Giovanni Nardacci, 'Lawful Operational Safeguards in AI Systems: Surrender Recognition, Compliance Architecture, and International Humanitarian Law' (2026), Zenodo DOI 10.5281/zenodo.21932439.
+    Giovanni Nardacci, 'Lawful Operational Safeguards in AI Systems: Surrender Recognition, Compliance Architecture, and International Humanitarian Law' (2026), Zenodo concept DOI 10.5281/zenodo.21932439.
   </div>
 <hr/>
-<h2>Download</h2>
+<h2>下载</h2>
 <a class="download" href="HF_Paper_LawfulSafeguards.pdf" target="_blank">📄 Download PDF</a>
 <a class="download" href="https://doi.org/10.5281/zenodo.21932439" target="_blank">📑 View on Zenodo</a>
 <hr/>
-<h2>Keywords</h2>
+<h2>关键词</h2>
 <p class="keywords">International Humanitarian Law · Autonomous Weapons · AI Governance · Lawful Operational Safeguards · Surrender Recognition · Meaningful Human Control · Temporal Compression · Defence Procurement · IHL Compliance Architecture · Article 36 AP I · Article 41 AP I · Article 57 AP I</p>
 <hr/>
 <h2>相关工作</h2>
-<p>本文分析的时间结构并非国际人道法所独有。关于民用机器安全法中的平行论证，参见：<a href="systemic-arrestability-zh.html">Systemic Arrestability: Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction</a>（Paper II，2026），Zenodo DOI 10.5281/zenodo.20837150。</p>
-<p>本文提出的可行性标准在 <a href="hf-signal-01-zh.html">HF SIGNAL 01</a>（Paper III，2026），Zenodo DOI 10.5281/zenodo.21183137 中用于评估一项候选识别协议，并在 <a href="technical-notes-zh.html">HFA 技术说明系列</a>中进一步扩展。</p>
+<p>本文分析的时间结构并非国际人道法所独有。关于民用机器安全法中的平行论证，参见：<a href="systemic-arrestability-zh.html">Systemic Arrestability: Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction</a>（Paper II，2026），Zenodo concept DOI 10.5281/zenodo.20837150。</p>
+<p>本文提出的可行性标准在 <a href="hf-signal-01-zh.html">HF SIGNAL 01</a>（Paper III，2026），Zenodo concept DOI 10.5281/zenodo.21183137 中用于评估一项候选识别协议，并在 <a href="technical-notes-zh.html">HFA 技术说明系列</a>中进一步扩展。</p>
 <hr/>
 <p class="meta"><em>本文提出一个分析框架，其依据是第二节所审查的习惯法禁令，以及为受其约束的国家规定该禁令的条约条款；本文无意解决有争议的条约解释问题，也无意在上述条款本身所规定的义务之外确立具有约束力的行为标准。</em></p>
 <p class="meta"><em>Human Flag Association — Bellinzona, Switzerland</em></p>

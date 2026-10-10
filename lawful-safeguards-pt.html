@@ -24,47 +24,40 @@
     .note { background: #1a1a1a; border: 1px solid #333; padding: 1em 1.5em; margin: 1.5em 0; font-size: 0.95em; color: #ccc; }
     .note ul { line-height: 1.6; }
     .langbar { margin: 0 0 1em; font-size: 0.9em; text-align: left; }
-    .pending { margin: 0 0 1.5em; padding: 0.6em 1em; border-left: 3px solid #66ccff; background: #111; color: #ccc; font-style: italic; font-size: 0.9em; text-align: left; }
 
   </style>
 </head>
 <body>
-<!-- TRANSLATION SCAFFOLD — Portuguese
-       Replace the English text below with the Portuguese translation.
-       Then delete the "pending" line that follows this comment.
-       To publish: add the same language bar to lawful-safeguards.html, point the
-       link in index-pt.html here, and add this URL to sitemap.xml. -->
 <p class="langbar"><a href="lawful-safeguards.html">English</a> · <a href="lawful-safeguards-it.html">Italiano</a> · <a href="lawful-safeguards-fr.html">Français</a> · <a href="lawful-safeguards-de.html">Deutsch</a> · <a href="lawful-safeguards-es.html">Español</a> · <strong>Português</strong> · <a href="lawful-safeguards-ru.html">Русский</a> · <a href="lawful-safeguards-zh.html">中文</a> · <a href="lawful-safeguards-ja.html">日本語</a></p>
-<p class="pending">A versão em língua inglesa é o texto oficial. Esta tradução é disponibilizada para fins de acessibilidade. Em caso de discrepância ou divergência de interpretação, prevalece a versão inglesa.</p>
-<a class="back" href="index-pt.html">← Back to Human Flag</a>
-<h1>Lawful Operational Safeguards in AI Systems</h1>
-<p class="meta">Surrender Recognition, Compliance Architecture, and International Humanitarian Law</p>
+<a class="back" href="index-pt.html">← Voltar à Human Flag</a>
+<h1>Salvaguardas operacionais lícitas em sistemas de IA</h1>
+<p class="meta">Reconhecimento da rendição, arquitetura da conformidade e direito internacional humanitário</p>
 <p class="meta">
     Giovanni Nardacci — Founder, Human Flag Association<br/>
     humanflag.org<br/>
-    Working Paper — V8, 20 September 2026 · Version DOI: 10.5281/zenodo.22858777
+    Working Paper — V9, 23 September 2026 · Concept DOI: 10.5281/zenodo.21932439
   </p>
 <hr/>
-<h2>Abstract</h2><p>A proibição de atacar uma pessoa fora de combate é uma regra do direito humanitário internacional consuetudinário, refletida na Regra 47 do Estudo do DIH Consuetudinário do CICV e historicamente expressa no Artigo 23(c) dos Regulamentos de Haia. A sua operação prática pressupõe que uma intenção de rendição, onde surge, possa ser expressa, percebida e traduzida na retenção do ataque antes que a força se torne irreversível.</p><p>Este artigo argumenta que a preservação desse intervalo — a janela de reconhecimento — não é uma nova obrigação, mas uma condição de eficácia de obrigações que vinculam as partes há mais de um século. Três condições adicionais o acompanham, cada uma delas corrigida antes da implantação, e não no campo. O sistema deve conter uma representação daquilo que está a envolver, sobre a qual uma mudança de estatuto protegido pode operar; onde tal estado não existe, uma indicação que chega a tempo não tem nada sobre o que agir. A função que regista a alteração não deve depender da cadeia de processamento que produziu a decisão de trabalho, uma vez que o erro que cria a necessidade de reconhecimento pode, caso contrário, suprimir o reconhecimento. E a reconstrutibilidade deve ser prevista antes da implantação, para que a conformidade continue a ser examinada após a implantação.</p><p>Quando a utilização normal previsível de um sistema envolver pessoas que, dadas as circunstâncias, deveriam ser reconhecidas como fora de combate, a revisão deve examinar se o sistema preserva a possibilidade prática de conformidade. A exclusão sistemática de salvaguardas tecnicamente realizáveis ​​relevantes para essa questão é uma decisão que a lei dispõe dos instrumentos para examinar e, quando se aplica um regime processual, uma decisão que deve ser justificada nos autos.</p>
+<h2>Resumo</h2><p>A proibição de atacar uma pessoa fora de combate é uma regra do direito humanitário internacional consuetudinário, refletida na Regra 47 do Estudo do DIH Consuetudinário do CICV e historicamente expressa no Artigo 23(c) dos Regulamentos de Haia. A sua operação prática pressupõe que uma intenção de rendição, onde surge, possa ser expressa, percebida e traduzida na retenção do ataque antes que a força se torne irreversível.</p><p>Este artigo argumenta que a preservação desse intervalo — a janela de reconhecimento — não é uma nova obrigação, mas uma condição de eficácia de obrigações que vinculam as partes há mais de um século. Três condições adicionais o acompanham, cada uma delas corrigida antes da implantação, e não no campo. O sistema deve conter uma representação daquilo que está a envolver, sobre a qual uma mudança de estatuto protegido pode operar; onde tal estado não existe, uma indicação que chega a tempo não tem nada sobre o que agir. A função que regista a alteração não deve depender da cadeia de processamento que produziu a decisão de trabalho, uma vez que o erro que cria a necessidade de reconhecimento pode, caso contrário, suprimir o reconhecimento. E a reconstrutibilidade deve ser prevista antes da implantação, para que a conformidade continue a ser examinada após a implantação.</p><p>Quando a utilização normal previsível de um sistema envolver pessoas que, dadas as circunstâncias, deveriam ser reconhecidas como fora de combate, a revisão deve examinar se o sistema preserva a possibilidade prática de conformidade. A exclusão sistemática de salvaguardas tecnicamente realizáveis ​​relevantes para essa questão é uma decisão que a lei dispõe dos instrumentos para examinar e, quando se aplica um regime processual, uma decisão que deve ser justificada nos autos.</p>
 
 
 
 <hr/>
-<hr/><h2>Notes</h2><p>A Versão 8 refina a Versão 7 sem alterar sua estrutura. A condição de reconstrutibilidade é declarada em uma proposição e localizada na aquisição e não na investigação: um sistema cuja arquitetura não representa o status relevante nem retém os eventos relevantes não pode ser reconstruído após o evento, e para os Estados vinculados pelo Artigo 36, a orientação do CICV sobre revisão legal apoia o mesmo ponto. A Secção VII já não repete esse material e aborda agora dois casos-limite: configurações nas quais não existe janela utilizável, e sistemas montados fora de uma cadeia de produção convencional, onde as decisões relevantes – encomendar construção, fornecer hardware e software, encomendar emprego – permanecem identificáveis ​​e anteriores.</p><p>Correções: A regra 47 agora é dada como base da condição representacional, que anteriormente era derivada da arquitetura do sistema; a referência cruzada de segurança da máquina não trata mais a guarda como baseada na mesma suposição temporal, sendo a guarda o caso contrastante em que a exposição é evitada; a descrição do procedimento de revisão legal dos Estados Unidos é apresentada de forma mais precisa; e uma citação residual ao sequenciamento de engajamento do sistema de armas próximo foi removida.</p><p>Substitui a versão 7 (setembro de 2026). Análise complementar: Prisão Sistêmica (Artigo II), conceito Zenodo DOI 10.5281/zenodo.20837150.</p><h2>Cite As</h2>
+<h2>Notas</h2><p>A versão 9 formula o critério em termos temporais, e não agenciais. A secção IV.C, anteriormente intitulada «Compressão do controlo humano», passa a chamar-se «Assimetria temporal e encerramento da janela». A presença de uma pessoa no processo decisório é um elemento probatório para essa questão, não o critério em si.</p><p>A secção II.C esclarece que o dever de abstenção pertence ao comandante e é exercido no terreno, enquanto a possibilidade de o exercer foi decidida antes, na escolha dos meios. O texto alinha também os termos «latência de deteção» e «revisão jurídica».</p><p>Substitui a versão 8 (setembro de 2026). Análise complementar: Arrestabilidade sistémica (Paper II), DOI conceptual Zenodo 10.5281/zenodo.20837150. Trabalho relacionado: HFA-TN-04, DOI conceptual Zenodo 10.5281/zenodo.22275485.</p><h2>Citar como</h2>
 <div class="cite">
-    Giovanni Nardacci, 'Lawful Operational Safeguards in AI Systems: Surrender Recognition, Compliance Architecture, and International Humanitarian Law' (2026), Zenodo DOI 10.5281/zenodo.21932439.
+    Giovanni Nardacci, 'Lawful Operational Safeguards in AI Systems: Surrender Recognition, Compliance Architecture, and International Humanitarian Law' (2026), Zenodo concept DOI 10.5281/zenodo.21932439.
   </div>
 <hr/>
 <h2>Download</h2>
 <a class="download" href="HF_Paper_LawfulSafeguards.pdf" target="_blank">📄 Download PDF</a>
 <a class="download" href="https://doi.org/10.5281/zenodo.21932439" target="_blank">📑 View on Zenodo</a>
 <hr/>
-<h2>Keywords</h2>
+<h2>Palavras-chave</h2>
 <p class="keywords">International Humanitarian Law · Autonomous Weapons · AI Governance · Lawful Operational Safeguards · Surrender Recognition · Meaningful Human Control · Temporal Compression · Defence Procurement · IHL Compliance Architecture · Article 36 AP I · Article 41 AP I · Article 57 AP I</p>
 <hr/>
 <h2>Trabalhos relacionados</h2>
-<p>A estrutura temporal analisada no presente documento não é exclusiva do direito internacional humanitário. Para o argumento paralelo no direito civil da segurança das máquinas, ver: <a href="systemic-arrestability-pt.html">Systemic Arrestability: Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction</a> (Paper II, 2026), Zenodo DOI 10.5281/zenodo.20837150.</p>
-<p>Os critérios de viabilidade aqui desenvolvidos são aplicados a um protocolo candidato de reconhecimento no <a href="hf-signal-01-pt.html">HF SIGNAL 01</a> (Paper III, 2026), Zenodo DOI 10.5281/zenodo.21183137, e desenvolvidos na <a href="technical-notes-pt.html">série de notas técnicas HFA</a>.</p>
+<p>A estrutura temporal analisada no presente documento não é exclusiva do direito internacional humanitário. Para o argumento paralelo no direito civil da segurança das máquinas, ver: <a href="systemic-arrestability-pt.html">Systemic Arrestability: Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction</a> (Paper II, 2026), Zenodo concept DOI 10.5281/zenodo.20837150.</p>
+<p>Os critérios de viabilidade aqui desenvolvidos são aplicados a um protocolo candidato de reconhecimento no <a href="hf-signal-01-pt.html">HF SIGNAL 01</a> (Paper III, 2026), Zenodo concept DOI 10.5281/zenodo.21183137, e desenvolvidos na <a href="technical-notes-pt.html">série de notas técnicas HFA</a>.</p>
 <hr/>
 <p class="meta"><em>Este documento propõe um quadro analítico baseado na proibição consuetudinária examinada na Secção II e nas disposições convencionais que a enunciam para os Estados por elas vinculados; não pretende resolver questões controvertidas de interpretação dos tratados, nem estabelecer normas de conduta vinculativas para além das impostas pelas próprias disposições citadas.</em></p>
 <p class="meta"><em>Human Flag Association — Bellinzona, Switzerland</em></p>

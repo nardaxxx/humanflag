@@ -22,48 +22,44 @@
     .download:hover { background: #333; }
     .back { display: inline-block; margin-bottom: 2em; color: #66ccff; text-decoration: none; font-size: 0.9em; }
     .langbar { margin: 0 0 1em; font-size: 0.9em; text-align: left; }
-    .pending { margin: 0 0 1.5em; padding: 0.6em 1em; border-left: 3px solid #66ccff; background: #111; color: #ccc; font-style: italic; font-size: 0.9em; text-align: left; }
 
   </style>
 </head>
 <body>
-<!-- TRANSLATION SCAFFOLD — Japanese
-       Replace the English text below with the Japanese translation.
-       Then delete the "pending" line that follows this comment.
-       To publish: add the same language bar to systemic-arrestability.html, point the
-       link in index-ja.html here, and add this URL to sitemap.xml. -->
 <p class="langbar"><a href="systemic-arrestability.html">English</a> · <a href="systemic-arrestability-it.html">Italiano</a> · <a href="systemic-arrestability-fr.html">Français</a> · <a href="systemic-arrestability-de.html">Deutsch</a> · <a href="systemic-arrestability-es.html">Español</a> · <a href="systemic-arrestability-pt.html">Português</a> · <a href="systemic-arrestability-ru.html">Русский</a> · <a href="systemic-arrestability-zh.html">中文</a> · <strong>日本語</strong></p>
-<p class="pending">英語版が正文です。この翻訳はアクセシビリティのために提供されています。不一致または解釈の相違がある場合は、英語版が優先します。</p>
-<a class="back" href="index-ja.html">← Back to Human Flag</a>
-<h1>Systemic Arrestability</h1>
-<p class="meta">Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction</p>
+<a class="back" href="index-ja.html">← Human Flag に戻る</a>
+<h1>システム停止可能性</h1>
+<p class="meta">機械の速度が人間の反応を上回る場合の機械安全法における操作者保護</p>
 <p class="meta">
     Giovanni Nardacci — Founder, Human Flag Association<br/>
     UNGM Partner No. 6126 · humanflag.org<br/>
-    Working Paper — V7, 20 September 2026 · Version DOI: 10.5281/zenodo.22858801
+    Working Paper — V8, 24 September 2026 · Concept DOI: 10.5281/zenodo.20837150
   </p>
+<h2>適用範囲と運用上のテスト</h2>
+<p>本稿は、EU 機械法、スイス製品安全法、米国の労働安全規制の下にある民用およびデュアルユースの機械を分析する。これらの枠組みは軍事作戦を規律しない。基準は特定の設置構成に適用され、利用可能な時間区間と人間の応答ウィンドウを確定し、停止能力がその区間内に収まり、危険を生じさせたものと故障経路を共有しないことが必要である。</p>
+<p>区間がいかなる機構も受け入れない場合、評価者は、どの機構も決して間に合わないことを証明する必要はない。立証責任は逆であり、対象構成において許容される機構が該当区間内で作動することを示さなければならない。本稿は人間の反応について普遍的な定数を示さない。</p>
 <hr/>
-<h2>Abstract</h2><p>機械安全法は、停止機能や緊急停止などの機器を通じてオペレーターを部分的に保護します。その操作は、人間が進行中の危険を認識し、評価し、危害が発生する前に行動できることを前提としています。その前提は検証できる。これは、危険が許容される間隔と、危険を停止するために必要な時間枠との比較に相当します。</p><p>利用可能な間隔は、危険な行為の開始から、それを超えるとその影響を防止できなくなるまでの期間です。それに対して、人間の介入が必要な窓口が立ちはだかります。そのウィンドウが利用可能な間隔よりも長い場合、最後の層が人間の介入に依存する保護アーキテクチャはまったく保護を提供しません。停止する能力は、代わりに、独自のウィンドウが間隔に適合し、危険を引き起こしたものと故障経路を共有しないメカニズムに存在する必要があります。</p><p>この比較は、いかなる法制度も参照することなく、まず危険の仕組みと反応の生理学から確立されます。欧州連合の機械法、スイスの製品安全法、米国の労働安全規制は、それが生み出す結果を要求していることがすでに示されていますが、比較自体を述べているものはありません。これらのシステムが統合される国際標準にも同じ沈黙が貫かれています。停止メカニズムの応答時間は詳細に標準化されており、危険が許容される間隔も同様に標準化されていますが、人間の介入に必要な時間枠は参考値として統合されていません。システム的停止可能性の基準は、その比較に名前を付け、特定の構成で実証できる形式にまとめます。現行法に義務を追加するものではありません。</p>
+<h2>要旨</h2><p>機械安全法は、停止機能や緊急停止などの機器を通じてオペレーターを部分的に保護します。その操作は、人間が進行中の危険を認識し、評価し、危害が発生する前に行動できることを前提としています。その前提は検証できる。これは、危険が許容される間隔と、危険を停止するために必要な時間枠との比較に相当します。</p><p>利用可能な間隔は、危険な行為の開始から、それを超えるとその影響を防止できなくなるまでの期間です。それに対して、人間の介入が必要な窓口が立ちはだかります。そのウィンドウが利用可能な間隔よりも長い場合、最後の層が人間の介入に依存する保護アーキテクチャはまったく保護を提供しません。停止する能力は、代わりに、独自のウィンドウが間隔に適合し、危険を引き起こしたものと故障経路を共有しないメカニズムに存在する必要があります。</p><p>この比較は、いかなる法制度も参照することなく、まず危険の仕組みと反応の生理学から確立されます。欧州連合の機械法、スイスの製品安全法、米国の労働安全規制は、それが生み出す結果を要求していることがすでに示されていますが、比較自体を述べているものはありません。これらのシステムが統合される国際標準にも同じ沈黙が貫かれています。停止メカニズムの応答時間は詳細に標準化されており、危険が許容される間隔も同様に標準化されていますが、人間の介入に必要な時間枠は参考値として統合されていません。システム的停止可能性の基準は、その比較に名前を付け、特定の構成で実証できる形式にまとめます。現行法に義務を追加するものではありません。</p>
 
 
 
 <hr/>
-<hr/><h2>Notes</h2><p>このバージョンでは、議論を因果関係に基づいて再度述べています。比較は、いかなる法制度も参照することなく、最初に導出されます。そして、ヨーロッパ、スイス、米国の枠組みがその結果を強制することが示されています。 1 つの間隔とその中に収まる必要があるウィンドウが、以前の用語に置き換わります。独立性は、メカニズムの応答時間がまったく測定可能である条件として追加されます。許容されるメカニズムが存在しない場合、結果は未解決の問題として残されるのではなく、生成できないデモンストレーションとして述べられます。以前のバージョンの 3 つの否定的な明確化は、それぞれの手順から削除されています。近接防御システムから抽出された例示的な例は削除されました。そこで説明されている間隔は交戦シーケンスの間隔であり、この文書で測定される間隔ではありません。</p><p>バージョン 6 に置き換わります。</p><h2>Cite As</h2>
+<h2>注記</h2><p>第 8 版は運用上のテストを明確にした。評価者は、どの機構もその時間区間内に作動できないことを証明する必要はなく、対象構成において許容される機構が実際にその区間内で作動することを示す必要がある。本稿は人間の反応時間について普遍的な定数を示さない。</p><p>2026 年 9 月の第 7 版に代わるもの。関連分析：Lawful Operational Safeguards in AI Systems（Paper I）、Zenodo コンセプト DOI 10.5281/zenodo.21932439。</p><h2>引用</h2>
 <div class="cite">
-    Giovanni Nardacci, 'Systemic Arrestability: Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction' (Human Flag Association working paper, 2026), Zenodo DOI 10.5281/zenodo.20837150.
+    Giovanni Nardacci, 'Systemic Arrestability: Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction' (Human Flag Association working paper, 2026), Zenodo concept DOI 10.5281/zenodo.20837150.
   </div>
 <hr/>
-<h2>Download</h2>
+<h2>ダウンロード</h2>
 <a class="download" href="systemic_arrestability.pdf" target="_blank">📄 Download PDF</a>
 <a class="download" href="https://doi.org/10.5281/zenodo.20837150" target="_blank">📑 View on Zenodo</a>
 <hr/>
-<h2>Keywords</h2>
+<h2>キーワード</h2>
 <p class="keywords">operator safety · machine safety · stop function · emergency stop · human reaction time · legal effectiveness · systemic arrestability · Directive 2006/42/EC · Regulation (EU) 2023/1230 · LSPro RS 930.11 · OSHA 29 CFR § 1910.212</p>
 <hr/>
 <h2>関連研究</h2>
 <p>本稿で分析する時間的構造は、民間の機械安全法に固有のものではない。国際人道法および自律兵器システムの文脈における並行する論証については、次を参照：<a href="lawful-safeguards-ja.html">Lawful Operational Safeguards in AI Systems</a>（Paper I、2026）。二つの分析が収斂することは、ここで特定された実効性の問題が、特定の法制度に固有のものではなく、構造的なものであることを示す。機械可読な認識プロトコル候補は <a href="hf-signal-01-ja.html">HF SIGNAL 01</a>（Paper III、2026）に規定され、時間的基準は <a href="technical-notes-ja.html">HFA Technical Note HFA-TN-02</a> において投降の認識へと拡張されている。</p>
 <hr/>
-<p class="meta"><em>This paper proposes systemic arrestability as an interpretative criterion within existing legal frameworks. It creates no new legal obligations and does not claim that any specific technical implementation is legally mandated.</em></p>
+<p class="meta"><em>本稿は、既存の法的枠組みにおける解釈基準としてシステム停止可能性を提案する。新たな法的義務を創設せず、特定の技術実装が法的に義務付けられるとも主張しない。</em></p>
 <p class="meta"><em>Human Flag Association — Bellinzona, Switzerland</em></p>
 </body>
 </html>

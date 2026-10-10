@@ -57,6 +57,14 @@
   <url>
     <loc>https://www.humanflag.org/corpus-guide.html</loc>
   </url>
+  <url><loc>https://www.humanflag.org/corpus-guide-it.html</loc></url>
+  <url><loc>https://www.humanflag.org/corpus-guide-fr.html</loc></url>
+  <url><loc>https://www.humanflag.org/corpus-guide-de.html</loc></url>
+  <url><loc>https://www.humanflag.org/corpus-guide-es.html</loc></url>
+  <url><loc>https://www.humanflag.org/corpus-guide-pt.html</loc></url>
+  <url><loc>https://www.humanflag.org/corpus-guide-ru.html</loc></url>
+  <url><loc>https://www.humanflag.org/corpus-guide-zh.html</loc></url>
+  <url><loc>https://www.humanflag.org/corpus-guide-ja.html</loc></url>
   <url>
     <loc>https://www.humanflag.org/canonical-status.html</loc>
   </url>
@@ -69,24 +77,80 @@
   <url>
     <loc>https://www.humanflag.org/arrestability.html</loc>
   </url>
+  <url><loc>https://www.humanflag.org/arrestability-it.html</loc></url>
+  <url><loc>https://www.humanflag.org/arrestability-fr.html</loc></url>
+  <url><loc>https://www.humanflag.org/arrestability-de.html</loc></url>
+  <url><loc>https://www.humanflag.org/arrestability-es.html</loc></url>
+  <url><loc>https://www.humanflag.org/arrestability-pt.html</loc></url>
+  <url><loc>https://www.humanflag.org/arrestability-ru.html</loc></url>
+  <url><loc>https://www.humanflag.org/arrestability-zh.html</loc></url>
+  <url><loc>https://www.humanflag.org/arrestability-ja.html</loc></url>
   <url>
     <loc>https://www.humanflag.org/lawful-safeguards.html</loc>
   </url>
+  <url><loc>https://www.humanflag.org/lawful-safeguards-it.html</loc></url>
+  <url><loc>https://www.humanflag.org/lawful-safeguards-fr.html</loc></url>
+  <url><loc>https://www.humanflag.org/lawful-safeguards-de.html</loc></url>
+  <url><loc>https://www.humanflag.org/lawful-safeguards-es.html</loc></url>
+  <url><loc>https://www.humanflag.org/lawful-safeguards-pt.html</loc></url>
+  <url><loc>https://www.humanflag.org/lawful-safeguards-ru.html</loc></url>
+  <url><loc>https://www.humanflag.org/lawful-safeguards-zh.html</loc></url>
+  <url><loc>https://www.humanflag.org/lawful-safeguards-ja.html</loc></url>
   <url>
     <loc>https://www.humanflag.org/systemic-arrestability.html</loc>
   </url>
+  <url><loc>https://www.humanflag.org/systemic-arrestability-it.html</loc></url>
+  <url><loc>https://www.humanflag.org/systemic-arrestability-fr.html</loc></url>
+  <url><loc>https://www.humanflag.org/systemic-arrestability-de.html</loc></url>
+  <url><loc>https://www.humanflag.org/systemic-arrestability-es.html</loc></url>
+  <url><loc>https://www.humanflag.org/systemic-arrestability-pt.html</loc></url>
+  <url><loc>https://www.humanflag.org/systemic-arrestability-ru.html</loc></url>
+  <url><loc>https://www.humanflag.org/systemic-arrestability-zh.html</loc></url>
+  <url><loc>https://www.humanflag.org/systemic-arrestability-ja.html</loc></url>
   <url>
     <loc>https://www.humanflag.org/hf-signal-01.html</loc>
   </url>
+  <url><loc>https://www.humanflag.org/hf-signal-01-it.html</loc></url>
+  <url><loc>https://www.humanflag.org/hf-signal-01-fr.html</loc></url>
+  <url><loc>https://www.humanflag.org/hf-signal-01-de.html</loc></url>
+  <url><loc>https://www.humanflag.org/hf-signal-01-es.html</loc></url>
+  <url><loc>https://www.humanflag.org/hf-signal-01-pt.html</loc></url>
+  <url><loc>https://www.humanflag.org/hf-signal-01-ru.html</loc></url>
+  <url><loc>https://www.humanflag.org/hf-signal-01-zh.html</loc></url>
+  <url><loc>https://www.humanflag.org/hf-signal-01-ja.html</loc></url>
   <url>
     <loc>https://www.humanflag.org/technical-notes.html</loc>
   </url>
+  <url><loc>https://www.humanflag.org/technical-notes-it.html</loc></url>
+  <url><loc>https://www.humanflag.org/technical-notes-fr.html</loc></url>
+  <url><loc>https://www.humanflag.org/technical-notes-de.html</loc></url>
+  <url><loc>https://www.humanflag.org/technical-notes-es.html</loc></url>
+  <url><loc>https://www.humanflag.org/technical-notes-pt.html</loc></url>
+  <url><loc>https://www.humanflag.org/technical-notes-ru.html</loc></url>
+  <url><loc>https://www.humanflag.org/technical-notes-zh.html</loc></url>
+  <url><loc>https://www.humanflag.org/technical-notes-ja.html</loc></url>
   <url>
     <loc>https://www.humanflag.org/about.html</loc>
   </url>
+  <url><loc>https://www.humanflag.org/about-it.html</loc></url>
+  <url><loc>https://www.humanflag.org/about-fr.html</loc></url>
+  <url><loc>https://www.humanflag.org/about-de.html</loc></url>
+  <url><loc>https://www.humanflag.org/about-es.html</loc></url>
+  <url><loc>https://www.humanflag.org/about-pt.html</loc></url>
+  <url><loc>https://www.humanflag.org/about-ru.html</loc></url>
+  <url><loc>https://www.humanflag.org/about-zh.html</loc></url>
+  <url><loc>https://www.humanflag.org/about-ja.html</loc></url>
   <url>
     <loc>https://www.humanflag.org/white-flag.html</loc>
   </url>
+  <url><loc>https://www.humanflag.org/white-flag-it.html</loc></url>
+  <url><loc>https://www.humanflag.org/white-flag-fr.html</loc></url>
+  <url><loc>https://www.humanflag.org/white-flag-de.html</loc></url>
+  <url><loc>https://www.humanflag.org/white-flag-es.html</loc></url>
+  <url><loc>https://www.humanflag.org/white-flag-pt.html</loc></url>
+  <url><loc>https://www.humanflag.org/white-flag-ru.html</loc></url>
+  <url><loc>https://www.humanflag.org/white-flag-zh.html</loc></url>
+  <url><loc>https://www.humanflag.org/white-flag-ja.html</loc></url>
   <url>
     <loc>https://www.humanflag.org/hf_accept_flag_page.html</loc>
   </url>

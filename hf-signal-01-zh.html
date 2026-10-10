@@ -24,68 +24,60 @@
     .channels { background: #111; border-left: 3px solid #66ccff; padding: 0.5em 1.5em; margin: 1em 0; }
     .note { background: #1a1a1a; border: 1px solid #333; padding: 1em 1.5em; margin: 1.5em 0; font-size: 0.95em; color: #ccc; }
     .langbar { margin: 0 0 1em; font-size: 0.9em; text-align: left; }
-    .pending { margin: 0 0 1.5em; padding: 0.6em 1em; border-left: 3px solid #66ccff; background: #111; color: #ccc; font-style: italic; font-size: 0.9em; text-align: left; }
 
   </style>
 </head>
 <body>
-<!-- TRANSLATION SCAFFOLD — Chinese
-       Replace the English text below with the Chinese translation.
-       Then delete the "pending" line that follows this comment.
-       To publish: add the same language bar to hf-signal-01.html, point the
-       link in index-zh.html here, and add this URL to sitemap.xml. -->
 <p class="langbar"><a href="hf-signal-01.html">English</a> · <a href="hf-signal-01-it.html">Italiano</a> · <a href="hf-signal-01-fr.html">Français</a> · <a href="hf-signal-01-de.html">Deutsch</a> · <a href="hf-signal-01-es.html">Español</a> · <a href="hf-signal-01-pt.html">Português</a> · <a href="hf-signal-01-ru.html">Русский</a> · <strong>中文</strong> · <a href="hf-signal-01-ja.html">日本語</a></p>
-<p class="pending">英文版本为权威文本。本译文为便利阅读而提供。如有任何不一致或解释上的分歧，以英文版本为准。</p>
-<a class="back" href="index-zh.html">← Back to Human Flag</a>
+<a class="back" href="index-zh.html">← 返回 Human Flag</a>
 <h1>HF SIGNAL 01</h1>
-<p class="meta">A Candidate Machine-Readable Protective Signal for Testing and Standardisation</p>
+<p class="meta">用于测试和标准化的候选机器可读保护信号</p>
 <p class="meta">
     Giovanni Nardacci — Founder, Human Flag Association<br/>
     humanflag.org<br/>
-    Working Paper — V6, 10 September 2026 · Version DOI: 10.5281/zenodo.22686696
+    Working Paper — V8, 24 September 2026 · Concept DOI: 10.5281/zenodo.21183137
   </p>
 <hr/>
-<h2>Abstract</h2>
+<h2>摘要</h2>
 <p>禁止攻击被认定为 hors de combat 的人员，是习惯国际人道法的一项规则（ICRC Customary IHL Study 的 Rule 47；1907年《海牙章程》第23(c)条），无论是否批准相关条约，该规则均约束武装冲突各方。对于《第一附加议定书》缔约国，第41条提供了该规则最明确的条约表述；第57条则要求计划或决定攻击者采取一切可行措施，核实攻击仍然合法。尽管这些义务长期以来一直有效，以机器速度运行的自主和半自主系统仍造成一个实际问题：目前并不存在一种普遍规定的机器可读形式，使投降意图能够传达给这类系统并由其识别。</p>
 <p>本文提出 HF SIGNAL 01，这是一项候选投降识别协议，旨在作为机器可读投降表示的技术参照。该协议提供两种替代模式：一种是不需要任何设备的被动视觉模式；另一种是主动电子模式，由必须共同确认的两个通道组成，即脉冲白色光学信号和射频特征。本文不主张其具有作战效能、已获采用或具有法律地位。该协议是表达投降意图的补充手段，绝不是获得保护的条件；其缺失不允许作出任何不利推断。本文所做的是依据先前界定的 Lawful Operational Safeguards 可行性标准评估该提案，包括技术成熟度、延迟、标注数据集和独立验证。</p>
 <p>该评估刻意采取保守立场。HF SIGNAL 01 目前是一个有公开文档的候选方案；其主动模式已具体规定到可测试并可保存在完整性受保护文件中的参数层级，而被动模式的参数仍有待规范性确定。它没有经过验证的探测器，没有标注数据集，没有测量延迟，也没有独立验证。目前它的贡献是文档性的，而非作战性的。本文主张，一个公开可用且完整性受到保护的候选标准的存在，改变了评估投降识别能力的事实背景：此前仅被描述为技术上不可能的问题，由此转化为一个有文档依据的设计选择、审查和验证问题。</p>
 <p>本文最后邀请开展独立技术测试、开发数据集，并在相关国际人道法和自主武器治理论坛中进行审议。</p>
 <hr/>
-<h2>The Signal</h2>
+<h2>信号</h2>
 <div class="channels">
-<p>HF SIGNAL 01 is a recognition signal with channels matched to who is emitting it. Its primary channel requires no technology at all:</p>
-<p>• <strong>The flag</strong> — a white circle on a red field, raised or displayed by the <strong>unarmed human</strong>. Like the white flag, it can be produced by anyone, anywhere, with cloth and paint — but it is specified for machine readability.<br/>
-    • <strong>Optical channel</strong> — 7 Hz pulsating white light, for <strong>equipped operators</strong> (vehicles, facilities, teams)<br/>
-    • <strong>Electronic channel</strong> — 144.0 MHz continuous FM tone, for <strong>equipped operators</strong></p>
-<p>Same protocol, same meaning, different levels of access: bare hands or instruments. No one is excluded from the possibility of signalling — this is the humanitarian point. A surrender signal that requires equipment contradicts itself: the person surrendering is, by definition, the one who has laid everything down. This is why the primary channel is cloth and paint. The published technical specification documents the optical and radio channels; the flag is the human-side channel of the same architecture.</p>
+<p>HF SIGNAL 01 是通过两种替代模式表达的一项保护功能。两种模式不是累积要求。</p>
+<p>• <strong>被动视觉模式</strong>——红色背景上的白色圆盘，不需要电源、设备、许可证或发射。没有任何设备的人也可以使用。<br/></p>
+<p>• <strong>主动电子模式</strong>——脉冲白色光学信号与射频特征相结合。只有在两个通道共同得到确认后，才能视为信号存在。</p>
+<p>两种模式具有相同的保护含义，但所需条件不同：徒手或使用仪器。因此，协议不把设备作为保护条件；缺少任一模式都不得作出不利推断。</p>
 </div>
 <div class="note">
-<strong>Technical parameters under independent review.</strong> Both channel parameters are published as documented reference values, not as validated operational specifications. The optical channel requires independent photobiological assessment: flash frequencies above 3 Hz can pose photosensitivity risks under certain luminance and viewing conditions. The radio channel falls within an internationally allocated amateur-radio band (144–146 MHz, with 144.000–144.025 MHz designated for satellite use in the IARU Region 1 band plan), and any transmission is subject to national authorization. Independent medical, regulatory and engineering validation is a precondition of any operational use — and is precisely the class of verification that a legal review under Article 36 AP I exists to perform.
-    <p><strong>Frequency reference value.</strong> The 144.0 MHz value indicated in the specification is a documented reference value, not an allocation. It falls within the 144.000–144.025 MHz segment designated for satellite use in the IARU Region 1 band plan; selection of an operational frequency requires coordination with the applicable national authorities and band plans. This determination is part of the independent regulatory validation identified in this paper as a precondition of any operational use.</p>
+<strong>技术参数正在接受独立审查。</strong> 两个通道的参数是有文件记录的参考值，而不是经过验证的运行规范。光学通道需要独立的光生物学评估；在特定亮度和观看条件下，高于 3 Hz 的闪烁频率可能带来光敏风险。无线电通道位于 144–146 MHz 业余无线电频段，任何发射均须获得国家授权。独立的医疗、监管和工程验证是任何运行使用的前提。
+<p><strong>频率参考值。</strong> 规范中的 144.0 MHz 是有文件记录的参考值，不是频率分配。选择运行频率须与主管国家机构及适用的频段规划协调。</p>
 </div>
 <hr/>
-<hr/><h2>Notes</h2><p class="note">注 — HF SIGNAL 01 模态架构。在版本 4 中，将 HF SIGNAL 01 称为“双通道信号”特指有源电子模式。 HF SIGNAL 01 包括两种替代模式：被动视觉模式和主动电子双通道模式。确认光学和无线电信道的要求仅适用于有源电子模式。</p><p>在明确纳入工作文件文本之前，被动视觉方式已经存在于 HF SIGNAL 01 存储库材料中。摘要中对“完全指定”概念的引用应与论文的技术资格一起阅读：主动电子模态被参数化地指定到可测试的水平，而被动视觉模态是在架构上定义的，并且仍然需要进一步的参数化和验证。</p><p>HF SIGNAL 01 是一种识别信号，其通道与发射者相匹配。它的主要渠道根本不需要任何技术：</p><p>• 旗帜——红底白圆，由手无寸铁的人举起或展示。与白旗一样，它可以由任何人在任何地方用布料和油漆制作 - 但它是为了机器可读性而指定的。 • 光学通道 — 7 Hz 脉动白光，适用于配备装备的操作员（车辆、设施、团队） • 电子通道 — 144.0 MHz 连续 FM 音调，适用于配备装备的操作员</p><p>相同的协议，相同的含义，不同的访问级别：徒手或仪器。没有人被排除在发出信号的可能性之外——这是人道主义的一点。需要装备的投降信号自相矛盾：根据定义，投降者是已经放下一切的人。这就是为什么主要渠道是布料和油漆。已发布的技术规范记录了光通道和无线电通道； flag是同一架构的人侧通道。</p><p>频率参考值。规范中指示的 144.0 MHz 值是记录的参考值，而不是分配值。它属于 IARU 1 区频段规划中指定用于卫星使用的 144.000–144.025 MHz 段；选择工作频率需要与适用的国家当局和频段规划进行协调。这一决定是本文中确定的独立监管验证的一部分，作为任何操作使用的先决条件。</p><h2>Cite As</h2>
+<h2>说明</h2><p>第 8 版明确，HF SIGNAL 01 包含两种替代模式：无需设备的被动视觉模式，以及必须共同确认两个通道的主动电子模式。两个通道均须确认的要求仅适用于主动模式。本文更新了对 Paper I、Paper II 和架构说明的引用。</p><p>取代 2026 年 9 月的第 7 版。本协议仍是有文件记录的候选方案；本文不主张其具有运行有效性、已被采用或具有法律地位。</p><h2>引用方式</h2>
 <div class="cite">
-    Giovanni Nardacci, 'HF SIGNAL 01: A Candidate Machine-Readable Protective Signal for Testing and Standardisation' (2026), Zenodo DOI 10.5281/zenodo.21183137.
+    Giovanni Nardacci, 'HF SIGNAL 01: A Candidate Machine-Readable Protective Signal for Testing and Standardisation' (2026), Zenodo concept DOI 10.5281/zenodo.21183137.
   </div>
 <hr/>
-<h2>Access</h2>
+<h2>访问</h2>
 <a class="download" href="https://doi.org/10.5281/zenodo.21183137" target="_blank">📄 View on Zenodo</a>
 <a class="download" href="https://github.com/nardaxxx/hf-signal-01" target="_blank">⚙️ GitHub Repository</a>
 <hr/>
-<h2 id="architecture-note">Architecture Note</h2><p>抽象的</p><p>本说明在一处说明了协会发布的 HF SIGNAL 01 的架构。它不修改任何保存的文件，不改变任何标识符，也不承担任何义务。 HF SIGNAL 01 不取代白旗；它翻译它。手势没有改变；接收者有：机器没有看到投降；它检测到或未能检测到信号，并且它与白旗没有共享代码。</p><p>HF SIGNAL 01 是一种单一保护功能，通过两种不同可访问性的模式来表达：被动视觉模式 - 红色区域上的白色圆盘，不需要电源、设备、许可证或发射，并且可供一无所有的人使用 - 以及主动电子模式，7 Hz 的脉动白光和连续的 FM 音调，这以设备为前提。情态是相同含义的替代表达，而不是连词；要求所有这些人将恰恰排除那些最没有能力发出信号的人。已确认的信号要求暂停交战并核实状态；它绝不是保护的必要条件，如果没有它，就不允许进行不利的推论。</p><p>该说明还记录了仍然悬而未决的问题，包括载波频率、发射风险、光敏性、与《日内瓦公约》保护标志的可分离性，以及无源符号的参数，其几何形状和色度是等待规范确定的占位符。</p><p class="meta">Version V4 · 27 August 2026 · Version DOI: 10.5281/zenodo.22133423</p>
+<h2 id="architecture-note">架构说明</h2><p>抽象的</p><p>本说明在一处说明了协会发布的 HF SIGNAL 01 的架构。它不修改任何保存的文件，不改变任何标识符，也不承担任何义务。 HF SIGNAL 01 不取代白旗；它翻译它。手势没有改变；接收者有：机器没有看到投降；它检测到或未能检测到信号，并且它与白旗没有共享代码。</p><p>HF SIGNAL 01 是一种单一保护功能，通过两种不同可访问性的模式来表达：被动视觉模式 - 红色区域上的白色圆盘，不需要电源、设备、许可证或发射，并且可供一无所有的人使用 - 以及主动电子模式，7 Hz 的脉动白光和连续的 FM 音调，这以设备为前提。情态是相同含义的替代表达，而不是连词；要求所有这些人将恰恰排除那些最没有能力发出信号的人。已确认的信号要求暂停交战并核实状态；它绝不是保护的必要条件，如果没有它，就不允许进行不利的推论。</p><p>该说明还记录了仍然悬而未决的问题，包括载波频率、发射风险、光敏性、与《日内瓦公约》保护标志的可分离性，以及无源符号的参数，其几何形状和色度是等待规范确定的占位符。</p><p class="meta">Version V4 · 27 August 2026 · Concept DOI: 10.5281/zenodo.21809826</p>
 <div class="cite">
-    Giovanni Nardacci, 'HF SIGNAL 01 — Architecture Note (Human Flag Association)' (2026), Zenodo DOI 10.5281/zenodo.21809826.
+    Giovanni Nardacci, 'HF SIGNAL 01 — Architecture Note (Human Flag Association)' (2026), Zenodo concept DOI 10.5281/zenodo.21809826.
   </div>
 <a class="download" href="https://doi.org/10.5281/zenodo.21809826" target="_blank">📄 View on Zenodo</a>
 <hr/>
-<h2>Keywords</h2>
+<h2>关键词</h2>
 <p class="keywords">International Humanitarian Law · Autonomous Weapons Systems · Lethal Autonomous Weapons Systems · Article 41 · Article 57 · Surrender Recognition · Machine-Readable Signal</p>
 <hr/>
 <h2>相关工作</h2>
 <p>HF SIGNAL 01 采用了以下文献中提出的可行性标准：<a href="lawful-safeguards-zh.html">Lawful Operational Safeguards in AI Systems</a>（Paper I）和 <a href="systemic-arrestability-zh.html">Systemic Arrestability</a>（Paper II）。决定此类信号是否能够被识别的时间前提，在 <a href="technical-notes-zh.html">HFA Technical Note HFA-TN-02</a> 中得到阐述。</p>
 <hr/>
-<p class="meta"><em>The working paper is released under CC BY 4.0 (Zenodo). The protocol files are released under CC BY-NC-ND 4.0 — free for personal, civilian and humanitarian use; commercial and institutional implementation requires a written license agreement with the Human Flag Association. Human Flag Association — Bellinzona, Switzerland.</em></p>
-<p class="meta"><em>The paper does not claim operational effectiveness, adoption, or legal status.</em></p>
+<p class="meta"><em>本文以 CC BY 4.0（Zenodo）许可发布。协议文件以 CC BY-NC-ND 4.0 许可发布，可免费用于个人、民用和人道主义用途；商业及机构实施须与 Human Flag Association 签订书面许可协议。 Human Flag Association — Bellinzona, Switzerland.</em></p>
+<p class="meta"><em>本文不主张其具有运行有效性、已被采用或具有法律地位。</em></p>
 </body>
 </html>

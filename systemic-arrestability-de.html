@@ -22,48 +22,44 @@
     .download:hover { background: #333; }
     .back { display: inline-block; margin-bottom: 2em; color: #66ccff; text-decoration: none; font-size: 0.9em; }
     .langbar { margin: 0 0 1em; font-size: 0.9em; text-align: left; }
-    .pending { margin: 0 0 1.5em; padding: 0.6em 1em; border-left: 3px solid #66ccff; background: #111; color: #ccc; font-style: italic; font-size: 0.9em; text-align: left; }
 
   </style>
 </head>
 <body>
-<!-- TRANSLATION SCAFFOLD — German
-       Replace the English text below with the German translation.
-       Then delete the "pending" line that follows this comment.
-       To publish: add the same language bar to systemic-arrestability.html, point the
-       link in index-de.html here, and add this URL to sitemap.xml. -->
 <p class="langbar"><a href="systemic-arrestability.html">English</a> · <a href="systemic-arrestability-it.html">Italiano</a> · <a href="systemic-arrestability-fr.html">Français</a> · <strong>Deutsch</strong> · <a href="systemic-arrestability-es.html">Español</a> · <a href="systemic-arrestability-pt.html">Português</a> · <a href="systemic-arrestability-ru.html">Русский</a> · <a href="systemic-arrestability-zh.html">中文</a> · <a href="systemic-arrestability-ja.html">日本語</a></p>
-<p class="pending">Die englischsprachige Fassung ist der maßgebliche Text. Diese Übersetzung wird aus Gründen der Zugänglichkeit bereitgestellt. Bei Abweichungen oder unterschiedlichen Auslegungen hat die englische Fassung Vorrang.</p>
-<a class="back" href="index-de.html">← Back to Human Flag</a>
-<h1>Systemic Arrestability</h1>
-<p class="meta">Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction</p>
+<a class="back" href="index-de.html">← Zurück zu Human Flag</a>
+<h1>Systemische Arrestierbarkeit</h1>
+<p class="meta">Schutz des Bedieners im Maschinensicherheitsrecht, wenn die Maschinengeschwindigkeit die menschliche Reaktion übersteigt</p>
 <p class="meta">
     Giovanni Nardacci — Founder, Human Flag Association<br/>
     UNGM Partner No. 6126 · humanflag.org<br/>
-    Working Paper — V7, 20 September 2026 · Version DOI: 10.5281/zenodo.22858801
+    Working Paper — V8, 24 September 2026 · Concept DOI: 10.5281/zenodo.20837150
   </p>
+<h2>Geltungsbereich und operativer Test</h2>
+<p>Das Papier untersucht zivile und dual-use Maschinen nach dem EU-Maschinenrecht, dem schweizerischen Produktsicherheitsrecht und den US-Arbeitsschutzvorschriften. Diese Rahmenwerke regeln keine militärischen Operationen. Das Kriterium wird auf eine bestimmte installierte Konfiguration angewandt: verfügbares Intervall und menschliches Reaktionsfenster sind festzustellen; die Anhaltefähigkeit muss in das Intervall passen und darf keinen gemeinsamen Fehlerpfad mit der Gefahrenquelle haben.</p>
+<p>Wenn das Intervall keinen Mechanismus zulässt, muss der Prüfer nicht beweisen, dass niemals ein Mechanismus rechtzeitig handeln könnte. Die Beweislast läuft umgekehrt: Für die Konfiguration ist nachzuweisen, dass ein zulässiger Mechanismus im maßgeblichen Intervall handelt. Das Papier liefert keine universelle Konstante der menschlichen Reaktion.</p>
 <hr/>
-<h2>Abstract</h2><p>Das Maschinensicherheitsrecht schützt den Bediener teilweise durch Instrumente – die Stoppfunktion, den Not-Aus –, deren Betätigung voraussetzt, dass ein Mensch eine entstehende Gefahr erkennen, bewerten und handeln kann, bevor ein Schaden entsteht. Diese Voraussetzung kann überprüft werden. Dabei handelt es sich um einen Vergleich zwischen der Zeitspanne, die eine Gefahr zulässt, und dem Zeitfenster, das zum Stoppen der Gefahr erforderlich ist.</p><p>Die verfügbare Zeitspanne reicht vom Beginn einer gefährlichen Handlung bis zu dem Punkt, ab dem ihre Wirkung nicht mehr verhindert werden kann. Demgegenüber steht das Fenster, das menschliches Eingreifen erfordert. Wenn dieses Fenster länger als das verfügbare Intervall ist, bietet eine Schutzarchitektur, deren letzte Schicht auf menschlichem Eingreifen beruht, überhaupt keinen Schutz. Die Fähigkeit zum Anhalten muss stattdessen in einem Mechanismus liegen, dessen eigenes Fenster in das Intervall passt und der keinen gemeinsamen Fehlerpfad mit dem hat, was die Gefahr verursacht hat.</p><p>Der Vergleich wird zunächst anhand der Mechanik der Gefahr und der Physiologie der Reaktion erstellt, ohne Bezug auf ein Rechtssystem. Dann wird gezeigt, dass das Maschinenrecht der Europäischen Union, das schweizerische Produktsicherheitsrecht und die Arbeitsschutzvorschriften der Vereinigten Staaten bereits das Ergebnis erfordern, das sie hervorbringen, während keines den Vergleich selbst angibt. Das gleiche Schweigen zieht sich durch die internationalen Standards, auf denen diese Systeme konvergieren: Die Reaktionszeit eines Haltemechanismus ist im Detail standardisiert, ebenso wie das Intervall, das eine Gefahr zulässt, während das Zeitfenster, das ein menschliches Eingreifen erfordert, nie als Referenzwert konsolidiert wurde. Das Kriterium der systemischen Arrestierbarkeit benennt diesen Vergleich und bringt ihn in eine Form, die für eine bestimmte Konfiguration nachgewiesen werden kann. Es fügt dem bestehenden Recht keine Verpflichtung hinzu.</p>
+<h2>Zusammenfassung</h2><p>Das Maschinensicherheitsrecht schützt den Bediener teilweise durch Instrumente – die Stoppfunktion, den Not-Aus –, deren Betätigung voraussetzt, dass ein Mensch eine entstehende Gefahr erkennen, bewerten und handeln kann, bevor ein Schaden entsteht. Diese Voraussetzung kann überprüft werden. Dabei handelt es sich um einen Vergleich zwischen der Zeitspanne, die eine Gefahr zulässt, und dem Zeitfenster, das zum Stoppen der Gefahr erforderlich ist.</p><p>Die verfügbare Zeitspanne reicht vom Beginn einer gefährlichen Handlung bis zu dem Punkt, ab dem ihre Wirkung nicht mehr verhindert werden kann. Demgegenüber steht das Fenster, das menschliches Eingreifen erfordert. Wenn dieses Fenster länger als das verfügbare Intervall ist, bietet eine Schutzarchitektur, deren letzte Schicht auf menschlichem Eingreifen beruht, überhaupt keinen Schutz. Die Fähigkeit zum Anhalten muss stattdessen in einem Mechanismus liegen, dessen eigenes Fenster in das Intervall passt und der keinen gemeinsamen Fehlerpfad mit dem hat, was die Gefahr verursacht hat.</p><p>Der Vergleich wird zunächst anhand der Mechanik der Gefahr und der Physiologie der Reaktion erstellt, ohne Bezug auf ein Rechtssystem. Dann wird gezeigt, dass das Maschinenrecht der Europäischen Union, das schweizerische Produktsicherheitsrecht und die Arbeitsschutzvorschriften der Vereinigten Staaten bereits das Ergebnis erfordern, das sie hervorbringen, während keines den Vergleich selbst angibt. Das gleiche Schweigen zieht sich durch die internationalen Standards, auf denen diese Systeme konvergieren: Die Reaktionszeit eines Haltemechanismus ist im Detail standardisiert, ebenso wie das Intervall, das eine Gefahr zulässt, während das Zeitfenster, das ein menschliches Eingreifen erfordert, nie als Referenzwert konsolidiert wurde. Das Kriterium der systemischen Arrestierbarkeit benennt diesen Vergleich und bringt ihn in eine Form, die für eine bestimmte Konfiguration nachgewiesen werden kann. Es fügt dem bestehenden Recht keine Verpflichtung hinzu.</p>
 
 
 
 <hr/>
-<hr/><h2>Notes</h2><p>Diese Version wiederholt das Argument in kausaler Reihenfolge. Der Vergleich wird zunächst ohne Bezug auf eine Rechtsordnung abgeleitet; Es wird dann gezeigt, dass die europäischen, schweizerischen und US-amerikanischen Rahmenwerke ihr Ergebnis durchsetzen. Ein Intervall und die Fenster, die darin passen müssen, ersetzen die frühere Terminologie. Als Unabhängigkeit kommt die Bedingung hinzu, unter der die Reaktionszeit eines Mechanismus überhaupt messbar ist. Wenn kein zulässiger Mechanismus vorhanden ist, wird die Konsequenz als Beweis dargelegt, der nicht erbracht werden kann, und nicht als offene Frage belassen. Die drei negativen Klarstellungen der früheren Version werden entfernt, da sich diese jeweils aus den Schritten ergeben. Ein anschauliches Beispiel aus einem Nahverteidigungssystem wurde entfernt: Das darin beschriebene Intervall war das der Angriffssequenz, nicht das Intervall, das in diesem Dokument gemessen wird.</p><p>Ersetzt Version 6.</p><h2>Cite As</h2>
+<h2>Anmerkungen</h2><p>Version 8 präzisiert den operativen Test: Der Prüfer muss nicht nachweisen, dass kein Mechanismus innerhalb des Intervalls handeln könnte; die Beweislast läuft umgekehrt und verlangt den Nachweis, dass ein zulässiger Mechanismus dies in der konkreten Konfiguration tut. Das Papier liefert keine universelle Konstante der menschlichen Reaktionszeit.</p><p>Ersetzt Version 7 (September 2026). Begleitanalyse: Lawful Operational Safeguards in AI Systems (Paper I), Zenodo-Konzept-DOI 10.5281/zenodo.21932439.</p><h2>Zitieren als</h2>
 <div class="cite">
-    Giovanni Nardacci, 'Systemic Arrestability: Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction' (Human Flag Association working paper, 2026), Zenodo DOI 10.5281/zenodo.20837150.
+    Giovanni Nardacci, 'Systemic Arrestability: Operator Protection in Machine Safety Law When Machine Speed Exceeds Human Reaction' (Human Flag Association working paper, 2026), Zenodo concept DOI 10.5281/zenodo.20837150.
   </div>
 <hr/>
 <h2>Download</h2>
 <a class="download" href="systemic_arrestability.pdf" target="_blank">📄 Download PDF</a>
 <a class="download" href="https://doi.org/10.5281/zenodo.20837150" target="_blank">📑 View on Zenodo</a>
 <hr/>
-<h2>Keywords</h2>
+<h2>Schlagwörter</h2>
 <p class="keywords">operator safety · machine safety · stop function · emergency stop · human reaction time · legal effectiveness · systemic arrestability · Directive 2006/42/EC · Regulation (EU) 2023/1230 · LSPro RS 930.11 · OSHA 29 CFR § 1910.212</p>
 <hr/>
 <h2>Verwandte Arbeiten</h2>
 <p>Die in diesem Papier untersuchte zeitliche Struktur ist nicht auf das zivile Maschinensicherheitsrecht beschränkt. Zum parallelen Argument im Kontext des humanitären Völkerrechts und autonomer Waffensysteme siehe: <a href="lawful-safeguards-de.html">Lawful Operational Safeguards in AI Systems</a> (Paper I, 2026). Die Übereinstimmung beider Analysen zeigt, dass das hier festgestellte Wirksamkeitsproblem struktureller und nicht regelungsspezifischer Natur ist. Ein maschinenlesbares Kandidatenprotokoll zur Erkennung wird in <a href="hf-signal-01-de.html">HF SIGNAL 01</a> (Paper III, 2026) spezifiziert, und das zeitliche Kriterium wird in der <a href="technical-notes-de.html">technischen HFA-Anmerkung HFA-TN-02</a> auf die Erkennung einer Ergebung erweitert.</p>
 <hr/>
-<p class="meta"><em>This paper proposes systemic arrestability as an interpretative criterion within existing legal frameworks. It creates no new legal obligations and does not claim that any specific technical implementation is legally mandated.</em></p>
+<p class="meta"><em>Dieses Papier schlägt die systemische Arrestierbarkeit als Auslegungskriterium in den bestehenden Rechtsrahmen vor. Es schafft keine neuen rechtlichen Pflichten und behauptet nicht, dass eine bestimmte technische Umsetzung gesetzlich vorgeschrieben ist.</em></p>
 <p class="meta"><em>Human Flag Association — Bellinzona, Switzerland</em></p>
 </body>
 </html>

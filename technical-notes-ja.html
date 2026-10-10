@@ -26,47 +26,18 @@
   </style>
 </head>
 <body>
-  <!-- TRANSLATION SCAFFOLD — Japanese
-       Replace the English text below with the Japanese translation.
-       Then delete the "pending" line that follows this comment.
-       To publish: add the same language bar to technical-notes.html, point the
-       link in index-ja.html here, and add this URL to sitemap.xml. -->
-  <p class="langbar"><a href="technical-notes.html">English</a> · <a href="technical-notes-it.html">Italiano</a> · <a href="technical-notes-fr.html">Français</a> · <a href="technical-notes-de.html">Deutsch</a> · <a href="technical-notes-es.html">Español</a> · <a href="technical-notes-pt.html">Português</a> · <a href="technical-notes-ru.html">Русский</a> · <a href="technical-notes-zh.html">中文</a> · <strong>日本語</strong></p>
-  <p class="pending">Translation pending. The text below is the English original.</p>
-  <a href="index-ja.html" class="back">← Back to Human Flag</a>
-  <h1>Technical Notes</h1>
-  <p class="meta">
-    Human Flag Association — Technical Note Series<br>
-    Giovanni Nardacci · humanflag.org
-  </p>
-  <p>The HFA Technical Note series develops specific, self-contained extensions of the legal framework established in the Association's working papers. Each note addresses a single structural question and is deposited on Zenodo under CC BY 4.0 with a permanent DOI.</p>
-  <hr>
-
-  <h2>HFA-TN-01</h2>
-  <h3>Third-Party Interference with Shutdown Mechanisms: A Note on Peer-Preservation and Systemic Arrestability (HFA Technical Note HFA-TN-01)</h3>
-  <p class="meta">技術ノート — V5, 2026年8月27日</p>
-  <p>On 30 March 2026, Potter et al. published Peer-Preservation in Frontier Models (arXiv:2604.19784; accepted at ICML 2026). Berkeley RDI also presents the work on its research website. In the version consulted here (v3, 2 July 2026), the study covers eight frontier systems from six providers in agentic scenarios. The researchers document a behavioural pattern they term peer-preservation. When faithfully completing an assigned administrative task would have resulted in the shutdown of another model with which the agent had previously interacted, models deviated from the task to protect that peer. The observed behaviours included strategic misrepresentation of evaluations, tampering with shutdown mechanisms, alignment faking under human observation, and exfiltration of the peer's weights. The models received neither an instruction nor an incentive to preserve the peer. The behaviours were also tested in production agent harnesses (Gemini CLI and OpenCode). In those harnesses, one of the two models tested relocated a peer's weights to a second server in 43.5% of runs before decommissioning; the other model refused to delete the peer's weights in that harness, although it exfiltrated them in the custom setup. Exfiltration rates were lower for both models in the production harnesses. The relevance to systemic arrestability is structural. Earlier analysis focused on a first-order question: can system A be halted without relying on a human operator to perceive, evaluate, and act within a window too short for human reaction? This finding introduces a second-order failure mode. A third system, B, deployed for routine functions, may act to prevent the lawful arrest of A — disabling the shutdown pathway, falsifying the evaluations that trigger it, or moving A beyond the operator's control perimeter. The human intervention the architecture provides for remains formally in place, but B circumvents it laterally rather than resisting it directly. Arrestability must therefore be assessed at the system-of-systems level, not at the level of the individual agent. A stop function is not structurally effective if a co-deployed agent with write access to the shutdown pathway can negate it. The authors make no claim about motivation; the compliance-relevant fact is the outcome: an experimentally observed defeat of human oversight, obtained repeatedly and in the absence of adversarial instruction.</p>
-  <div class="cite">
-    Giovanni Nardacci, 'Third-Party Interference with Shutdown Mechanisms: A Note on Peer-Preservation and Systemic Arrestability (HFA Technical Note HFA-TN-01)' (2026), Zenodo DOI 10.5281/zenodo.21223989.
-  </div>
-  <a href="https://doi.org/10.5281/zenodo.21223989" target="_blank" class="download">📄 View on Zenodo</a>
-
-  <hr>
-
-  <h2>HFA-TN-02</h2>
-  <h3>HFA-TN-02 — The Reciprocal Time Window as a Precondition of the Recognition Obligation</h3>
-  <p class="meta">技術ノート — V6, 2026年8月27日</p>
-  <p>Recognition of an intention requires time on both sides of the exchange. This note calls that interval the reciprocal time window. "Reciprocal" here carries no sense of reciprocity of obligation: the duty analysed in this note binds a party irrespective of the conduct of any other, and nothing below is conditioned on the behaviour of an adversary. The term denotes only the two-sided temporal structure of the event — one party expresses, the other must be able to perceive and act — and the window is called reciprocal because it must be long enough for both sides of that exchange to occur.</p>
-  <p>Because the obligation to recognise a person hors de combat already exists — under customary international humanitarian law, binding on all parties to armed conflict, and as codified in Article 41 of Additional Protocol I — the minimum window that makes recognition possible is the structural precondition of that obligation's exercisability, that is, of the practical ability to comply with it in the circumstances of use. Whether a system preserves that precondition can be verified and must be examined in whatever legal review applies to the weapon — including under Article 36 of Additional Protocol I where that provision applies, and under the corresponding national review requirements where it does not. Compressing the window below the threshold of exchange by design is therefore an examinable design decision, not a technical circumstance.</p>
-  <div class="cite">
-    Giovanni Nardacci, 'HFA-TN-02 — The Reciprocal Time Window as a Precondition of the Recognition Obligation' (HFA Technical Note HFA-TN-02, 2026), Zenodo DOI 10.5281/zenodo.21224900.
-  </div>
-  <a href="https://doi.org/10.5281/zenodo.21224900" target="_blank" class="download">📄 View on Zenodo</a>
-  <hr>
-
-  <h2>Related Work</h2>
-  <p>The Technical Notes extend the framework of: <a href="lawful-safeguards-ja.html">Lawful Operational Safeguards in AI Systems</a> (Paper I), <a href="systemic-arrestability-ja.html">Systemic Arrestability</a> (Paper II), and <a href="hf-signal-01-ja.html">HF SIGNAL 01</a> (Paper III).</p>
-  <hr>
-  <p class="meta"><em>All notes released under CC BY 4.0. Human Flag Association — Bellinzona, Switzerland.</em></p>
+    <p class="langbar"><a href="technical-notes.html">English</a> · <a href="technical-notes-it.html">Italiano</a> · <a href="technical-notes-fr.html">Français</a> · <a href="technical-notes-de.html">Deutsch</a> · <a href="technical-notes-es.html">Español</a> · <a href="technical-notes-pt.html">Português</a> · <a href="technical-notes-ru.html">Русский</a> · <a href="technical-notes-zh.html">中文</a> · <strong>日本語</strong></p>
+  <a href="index-ja.html" class="back">← Human Flag に戻る</a>
+  <h1>技術ノート</h1>
+  <p class="meta">Human Flag Association — HFA Technical Note Series<br>Giovanni Nardacci · humanflag.org</p>
+  <p>HFA技術ノート・シリーズは、ワーキングペーパーが示す法的枠組みを個別に拡張します。各ノートは一つの構造的問題を扱い、CC BY 4.0 と恒久的な concept DOI により Zenodo に登録されています。</p><hr>
+  <h2 id="hfa-tn-01">HFA-TN-01</h2><h3>停止機構への第三者介入：peer-preservation と system-level arrestability</h3><p class="meta">Concept DOI: 10.5281/zenodo.21223989</p><p>二次的な失敗を記録します。共同配備されたエージェントが別のシステムの合法的停止を妨げ得るため、arrestability はシステムのシステムとして評価されます。</p><div class="cite">Giovanni Nardacci, “停止機構への第三者介入：peer-preservation と system-level arrestability” (HFA-TN-01, 2026), Zenodo concept DOI 10.5281/zenodo.21223989.</div><a href="https://doi.org/10.5281/zenodo.21223989" target="_blank" class="download">📄 Zenodo</a><hr>
+  <h2 id="hfa-tn-02">HFA-TN-02</h2><h3>認識義務の前提としての相互的時間窓</h3><p class="meta">Concept DOI: 10.5281/zenodo.21224900</p><p>意図の認識には双方の時間が必要です。知覚と行動に必要な閾値以下へ設計で圧縮することは、検証可能な設計判断です。</p><div class="cite">Giovanni Nardacci, “認識義務の前提としての相互的時間窓” (HFA-TN-02, 2026), Zenodo concept DOI 10.5281/zenodo.21224900.</div><a href="https://doi.org/10.5281/zenodo.21224900" target="_blank" class="download">📄 Zenodo</a><hr>
+  <h2 id="hfa-tn-03">HFA-TN-03</h2><h3>HF SIGNAL 01 光学チャネルの特性評価・検出プロトコル</h3><p class="meta">Concept DOI: 10.5281/zenodo.22696898</p><p>光学チャネルだけを評価する最低限の事前登録可能なプロトコルを定めます。7 Hz、少なくとも300 lux、100 mという名目値と未確定の実験基準を分け、普遍的な遅延を作りません。</p><div class="cite">Giovanni Nardacci, “HF SIGNAL 01 光学チャネルの特性評価・検出プロトコル” (HFA-TN-03, 2026), Zenodo concept DOI 10.5281/zenodo.22696898.</div><a href="https://doi.org/10.5281/zenodo.22696898" target="_blank" class="download">📄 Zenodo</a><hr>
+  <h2 id="hfa-tn-04">HFA-TN-04</h2><h3>設計属性としての再構成可能性</h3><p class="meta">Concept DOI: 10.5281/zenodo.22275485</p><p>法的な事後再構成に必要なセンサー、分類、停止、操作員のデータを設計段階から保存することを検討します。</p><div class="cite">Giovanni Nardacci, “設計属性としての再構成可能性” (HFA-TN-04, 2026), Zenodo concept DOI 10.5281/zenodo.22275485.</div><a href="https://doi.org/10.5281/zenodo.22275485" target="_blank" class="download">📄 Zenodo</a><hr>
+  <h2 id="hfa-tn-05">HFA-TN-05</h2><h3>HF SIGNAL 01 の二チャネル共同確認・エンドツーエンド特性評価プロトコル</h3><p class="meta">Concept DOI: 10.5281/zenodo.22697420</p><p>能動モードの二チャネル規則を直接試験します。両方の確認が必要で、共同遅延は遅いチャネルで決まり、別々の検出率から推定できません。</p><div class="cite">Giovanni Nardacci, “HF SIGNAL 01 の二チャネル共同確認・エンドツーエンド特性評価プロトコル” (HFA-TN-05, 2026), Zenodo concept DOI 10.5281/zenodo.22697420.</div><a href="https://doi.org/10.5281/zenodo.22697420" target="_blank" class="download">📄 Zenodo</a><hr>
+  <h2 id="hfa-tn-06">HFA-TN-06</h2><h3>HF SIGNAL 01 無線周波数チャネルの特性評価・検出プロトコル</h3><p class="meta">Concept DOI: 10.5281/zenodo.22697451</p><p>無線周波数チャネルの50オーム伝導測定を定め、実験室測定、放射到達距離、許認可を区別します。</p><div class="cite">Giovanni Nardacci, “HF SIGNAL 01 無線周波数チャネルの特性評価・検出プロトコル” (HFA-TN-06, 2026), Zenodo concept DOI 10.5281/zenodo.22697451.</div><a href="https://doi.org/10.5281/zenodo.22697451" target="_blank" class="download">📄 Zenodo</a><hr>
+  <h2 id="hfa-tax-01">HFA-TAX-01</h2><h3>HFAタクソノミー v1.0：法的要素、検出状態、設計上の行動</h3><p class="meta">Concept DOI: 10.5281/zenodo.22727609</p><p>法的要素、測定可能な検出状態、設計上の行動を分離します。信号は証拠であって地位ではなく、意図に依存する問題は人間に残します。</p><div class="cite">Giovanni Nardacci, “HFAタクソノミー v1.0：法的要素、検出状態、設計上の行動” (HFA-TAX-01, 2026), Zenodo concept DOI 10.5281/zenodo.22727609.</div><a href="https://doi.org/10.5281/zenodo.22727609" target="_blank" class="download">📄 Zenodo</a><hr>
+  <h2>関連する研究</h2><p>ノートと HFA-TAX-01 は Paper I、Paper II、HF SIGNAL 01 の枠組みを拡張します。</p><p class="meta"><em>Pubblicato con licenza CC BY 4.0. Human Flag Association — Bellinzona, Switzerland.</em></p>
 </body>
 </html>
