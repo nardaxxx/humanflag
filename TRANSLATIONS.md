@@ -13,15 +13,14 @@ State of the eight document pages in eight languages. `todo` means the file stil
 | `hf-signal-01` — Paper III — HF SIGNAL 01 | done | done | done | done | done | done | done | done |
 | `technical-notes` — Technical Notes | done | done | done | done | done | done | done | done |
 
-**Outstanding: 0 of 64.**
+**Core document pages: 64 of 64 translated.** The localized document-status and CCW-statement pages are also published for all eight languages.
 
-## To translate one page
+## Translation policy
 
-The eight language variants have been manually translated and published in the sitemap.
-The English pages remain the authoritative versions; localized pages are provided for
-accessibility and use the same stable concept DOI identifiers.
-
-The language bar, the internal navigation and the links from each translated
-home page are already wired. Nothing else needs touching.
+The English pages remain the authoritative publication texts; localized pages are
+manually translated for accessibility and use the same stable concept DOI identifiers.
+Bibliographic titles inside citation blocks may remain in their original publication
+language so that the cited work remains identifiable. Interface labels, metadata,
+navigation, status pages and the CCW statement are translated in each language.
 
 This file records the translation status of the site.
