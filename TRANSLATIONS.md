@@ -8,12 +8,9 @@ State of the eight document pages in eight languages. `todo` means the file stil
 | `arrestability` — Why Surrender Requires Arrestability | done | done | done | done | done | done | done | done |
 | `white-flag` — Why the white flag is no longer enough | done | done | done | done | done | done | done | done |
 | `corpus-guide` — Corpus Guide | done | done | done | done | done | done | done | done |
-| `lawful-safeguards` — Paper I — Lawful Operational Safeguards | done | done | done | done | done | done | done | done |
-| `systemic-arrestability` — Paper II — Systemic Arrestability | done | done | done | done | done | done | done | done |
-| `hf-signal-01` — Paper III — HF SIGNAL 01 | done | done | done | done | done | done | done | done |
-| `technical-notes` — Technical Notes | done | done | done | done | done | done | done | done |
+| `works` — Works (list of Zenodo deposits) | done | done | done | done | done | done | done | done |
 
-**Core document pages: 64 of 64 translated.** The localized document-status and CCW-statement pages are also published for all eight languages.
+**Core document pages: 40 of 40 translated.** The localized document-status and CCW-statement pages are also published for all eight languages.
 
 ## Translation policy
 

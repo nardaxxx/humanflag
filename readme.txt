@@ -24,12 +24,9 @@ index-manifesto-ru.html        → Manifesto, russo
 index-manifesto-zh.html        → Manifesto, cinese  
 index-manifesto-ja.html        → Manifesto, giapponese  
 
-PAPER E NOTE TECNICHE
+LAVORI
 
-lawful-safeguards.html         → Paper I — Lawful Operational Safeguards  
-systemic-arrestability.html    → Paper II — Systemic Arrestability  
-hf-signal-01.html              → Paper III — HF SIGNAL 01  
-technical-notes.html           → Note tecniche HFA-TN-01 e HFA-TN-02  
+works.html                     → Elenco dei lavori su Zenodo, con i DOI (9 lingue: works-it.html, ecc.)
 corpus-guide.html              → Guida al corpus, con i DOI Zenodo  
 
 PAGINE DIVULGATIVE
@@ -48,11 +45,6 @@ SEGNALI
 
 HF-PAX-01.md                   → HF-PAX-01, segnale semantico di pace  
 humanflag.xhtml                → Nodo semantico RDF  
-
-PDF
-
-HF_Paper_LawfulSafeguards_Rev3_CORRECTED.pdf  → Testo integrale del Paper I  
-Systemic_Arrestability_v2.pdf  → Testo integrale del Paper II  
 
 RISORSE
 
