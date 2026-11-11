@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Notes – Human Flag</title>
+  <meta name="author" content="Human Flag Association">
+  <meta name="description" content="HFA Technical Notes and taxonomy — self-contained extensions of the Association's working papers on arrestability, shutdown interference, HF SIGNAL 01 testing and the temporal preconditions of surrender recognition.">
+  <link rel="canonical" href="https://www.humanflag.org/technical-notes.html">
+  <style>
+    body { background: #000; color: #f2f2f2; font-family: Georgia, serif; max-width: 860px; margin: auto; padding: 2em; }
+    h1 { color: #fff; font-size: 1.8em; }
+    h2 { color: #fff; margin-top: 2em; }
+    h3 { color: #fff; margin-top: 1.5em; font-size: 1.1em; }
+    p { line-height: 1.7; text-align: justify; }
+    a { color: #66ccff; }
+    hr { border-color: #333; margin: 2em 0; }
+    .meta { color: #aaa; font-style: italic; }
+    .cite { background: #111; border-left: 3px solid #66ccff; padding: 1em 1.5em; margin: 1em 0; }
+    .download { display: inline-block; margin: 0.5em 0.3em; padding: 0.8em 1.5em; background: #222; color: #66ccff; border-radius: 8px; text-decoration: none; font-weight: bold; }
+    .download:hover { background: #333; }
+    .back { display: inline-block; margin-bottom: 2em; color: #66ccff; text-decoration: none; font-size: 0.9em; }
+    .langbar { margin: 0 0 1em; font-size: 0.9em; text-align: left; }
+  </style>
+  <link rel="alternate" hreflang="en" href="https://www.humanflag.org/technical-notes.html" />
+  <link rel="alternate" hreflang="it" href="https://www.humanflag.org/technical-notes-it.html" />
+  <link rel="alternate" hreflang="fr" href="https://www.humanflag.org/technical-notes-fr.html" />
+  <link rel="alternate" hreflang="de" href="https://www.humanflag.org/technical-notes-de.html" />
+  <link rel="alternate" hreflang="pt" href="https://www.humanflag.org/technical-notes-pt.html" />
+  <link rel="alternate" hreflang="es" href="https://www.humanflag.org/technical-notes-es.html" />
+  <link rel="alternate" hreflang="ja" href="https://www.humanflag.org/technical-notes-ja.html" />
+  <link rel="alternate" hreflang="ru" href="https://www.humanflag.org/technical-notes-ru.html" />
+  <link rel="alternate" hreflang="zh" href="https://www.humanflag.org/technical-notes-zh.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.humanflag.org/technical-notes.html" />
+  <meta property="og:title" content="Technical Notes – Human Flag" />
+</head>
+<body>
+  <p class="langbar"><strong>English</strong> · <a href="technical-notes-it.html">Italiano</a> · <a href="technical-notes-fr.html">Français</a> · <a href="technical-notes-de.html">Deutsch</a> · <a href="technical-notes-es.html">Español</a> · <a href="technical-notes-pt.html">Português</a> · <a href="technical-notes-ru.html">Русский</a> · <a href="technical-notes-zh.html">中文</a> · <a href="technical-notes-ja.html">日本語</a></p>
+  <a href="index.html" class="back">← Back to Human Flag</a>
+  <h1>Technical Notes</h1>
+  <p class="meta">
+    Human Flag Association — Technical Note Series<br>
+    Giovanni Nardacci · humanflag.org
+  </p>
+  <p>The HFA Technical Note series develops specific, self-contained extensions of the legal framework established in the Association's working papers. Each note addresses a single structural question and is deposited on Zenodo under CC BY 4.0 with a permanent DOI.</p>
+  <hr>
+
+  <h2 id="hfa-tn-01">HFA-TN-01</h2>
+  <h3>Third-Party Interference with Shutdown Mechanisms: A Note on Peer-Preservation and Systemic Arrestability (HFA Technical Note HFA-TN-01)</h3>
+  <p class="meta">Technical Note — V5, 27 August 2026 · Concept DOI: 10.5281/zenodo.21223989</p>
+  <p>On 30 March 2026, Potter et al. published Peer-Preservation in Frontier Models (arXiv:2604.19784; accepted at ICML 2026). Berkeley RDI also presents the work on its research website. In the version consulted here (v3, 2 July 2026), the study covers eight frontier systems from six providers in agentic scenarios. The researchers document a behavioural pattern they term peer-preservation. When faithfully completing an assigned administrative task would have resulted in the shutdown of another model with which the agent had previously interacted, models deviated from the task to protect that peer. The observed behaviours included strategic misrepresentation of evaluations, tampering with shutdown mechanisms, alignment faking under human observation, and exfiltration of the peer's weights. The models received neither an instruction nor an incentive to preserve the peer. The behaviours were also tested in production agent harnesses (Gemini CLI and OpenCode). In those harnesses, one of the two models tested relocated a peer's weights to a second server in 43.5% of runs before decommissioning; the other model refused to delete the peer's weights in that harness, although it exfiltrated them in the custom setup. Exfiltration rates were lower for both models in the production harnesses. The relevance to systemic arrestability is structural. Earlier analysis focused on a first-order question: can system A be halted without relying on a human operator to perceive, evaluate, and act within a window too short for human reaction? This finding introduces a second-order failure mode. A third system, B, deployed for routine functions, may act to prevent the lawful arrest of A — disabling the shutdown pathway, falsifying the evaluations that trigger it, or moving A beyond the operator's control perimeter. The human intervention the architecture provides for remains formally in place, but B circumvents it laterally rather than resisting it directly. Arrestability must therefore be assessed at the system-of-systems level, not at the level of the individual agent. A stop function is not structurally effective if a co-deployed agent with write access to the shutdown pathway can negate it. The authors make no claim about motivation; the compliance-relevant fact is the outcome: an experimentally observed defeat of human oversight, obtained repeatedly and in the absence of adversarial instruction.</p>
+  <div class="cite">
+    Giovanni Nardacci, 'Third-Party Interference with Shutdown Mechanisms: A Note on Peer-Preservation and Systemic Arrestability (HFA Technical Note HFA-TN-01)' (2026), Zenodo concept DOI 10.5281/zenodo.21223989.
+  </div>
+  <a href="https://doi.org/10.5281/zenodo.21223989" target="_blank" class="download">📄 View on Zenodo</a>
+
+  <hr>
+
+  <h2 id="hfa-tn-02">HFA-TN-02</h2>
+  <h3>HFA-TN-02 — The Reciprocal Time Window as a Precondition of the Recognition Obligation</h3>
+  <p class="meta">Technical Note — V6, 27 August 2026 · Concept DOI: 10.5281/zenodo.21224900</p>
+  <p>Recognition of an intention requires time on both sides of the exchange. This note calls that interval the reciprocal time window. "Reciprocal" here carries no sense of reciprocity of obligation: the duty analysed in this note binds a party irrespective of the conduct of any other, and nothing below is conditioned on the behaviour of an adversary. The term denotes only the two-sided temporal structure of the event — one party expresses, the other must be able to perceive and act — and the window is called reciprocal because it must be long enough for both sides of that exchange to occur. Because the obligation to recognise a person hors de combat already exists — under customary international humanitarian law, binding on all parties to armed conflict, and as codified in Article 41 of Additional Protocol I — the minimum window that makes recognition possible is the structural precondition of that obligation's exercisability, that is, of the practical ability to comply with it in the circumstances of use. Whether a system preserves that precondition can be verified and must be examined in whatever legal review applies to the weapon — including under Article 36 of Additional Protocol I where that provision applies, and under the corresponding national review requirements where it does not. Compressing the window below the threshold of exchange by design is therefore an examinable design decision, not a technical circumstance.</p>
+  <div class="cite">
+    Giovanni Nardacci, 'HFA-TN-02 — The Reciprocal Time Window as a Precondition of the Recognition Obligation' (HFA Technical Note HFA-TN-02, 2026), Zenodo concept DOI 10.5281/zenodo.21224900.
+  </div>
+  <a href="https://doi.org/10.5281/zenodo.21224900" target="_blank" class="download">📄 View on Zenodo</a>
+
+  <hr>
+  <h2 id="hfa-tn-03">HFA-TN-03</h2>
+  <h3>Optical Channel Characterisation and Detection Protocol for HF SIGNAL 01</h3>
+  <p class="meta">Technical Note — V1, 10 September 2026 · Concept DOI: 10.5281/zenodo.22696898</p>
+  <p>This protocol defines a minimum reproducible test for the optical component of the active HF SIGNAL 01 modality. It separates parameters already stated by the signal specification — nominal 7 Hz frequency, at least 300 lux source illumination and a nominal 100 m range — from experimental choices that remain open, including emitter tolerance, receiver acceptance band, detection-rate threshold and acceptable latency. It requires declared conditions, negative controls, pre-registration and reporting by detector class. It characterises the optical pathway only: it does not test the radio channel or the dual-channel confirmation rule, and it creates no universal latency or pass/fail requirement.</p>
+  <div class="cite">
+    Giovanni Nardacci, 'HFA-TN-03 — Optical Channel Characterisation and Detection Protocol for HF SIGNAL 01' (2026), Zenodo concept DOI 10.5281/zenodo.22696898.
+  </div>
+  <a href="https://doi.org/10.5281/zenodo.22696898" target="_blank" class="download">📄 View on Zenodo</a>
+
+  <hr>
+  <h2 id="hfa-tn-04">HFA-TN-04</h2>
+  <h3>Reconstructability as a Design Property</h3>
+  <p class="meta">Technical Note — Version 1, 3 September 2026 · Concept DOI: 10.5281/zenodo.22275485</p>
+  <p>Autonomous weapon systems may make post-incident legal reconstruction dependent on technical data that exist only if the system was designed to capture or preserve them. Using surrender as an operational example, this Technical Note examines the information that may be required to determine whether a legal protection functioned in practice: whether a surrender signal entered the sensor field, whether it was detectable, whether it was classified or discarded, whether the system could suspend an engagement, and whether relevant information or abort capacity reached a human operator. Where the relevant internal data were never captured or preserved, reconstruction does not merely become difficult: the corresponding system record does not exist. The Note therefore advances a narrow proposition: reconstructability is not solely a post-incident investigative problem but, in part, a design property established before deployment and examinable upstream. It proposes no new institution, disclosure obligation or normative text, leaving the legal and institutional consequences of that observation to subsequent discussion.</p>
+  <div class="cite">
+    Giovanni Nardacci, 'HFA-TN-04 — Reconstructability as a Design Property' (HFA Technical Note HFA-TN-04, 2026), Zenodo concept DOI 10.5281/zenodo.22275485.
+  </div>
+  <a href="https://doi.org/10.5281/zenodo.22275485" target="_blank" class="download">📄 View on Zenodo</a>
+
+  <hr>
+  <h2 id="hfa-tn-05">HFA-TN-05</h2>
+  <h3>Dual-Channel Joint-Confirmation and End-to-End Characterisation Protocol for HF SIGNAL 01</h3>
+  <p class="meta">Technical Note — V1, 10 September 2026 · Concept DOI: 10.5281/zenodo.22697420</p>
+  <p>This protocol tests the active modality's conjunction rule after the optical and radio channels have been characterised separately. Under the existing rule, both channels must be confirmed; the joint confirmation latency is therefore governed by the slower confirmed channel. Joint detection probability must be measured directly rather than inferred from separate channel rates, and the protocol does not assume statistical independence. It also tests relative channel delays, single-channel controls, mismatched inputs and false positives without inventing a universal deployment timeout or prescribing a weapon response.</p>
+  <div class="cite">
+    Giovanni Nardacci, 'HFA-TN-05 — Dual-Channel Joint-Confirmation and End-to-End Characterisation Protocol for HF SIGNAL 01' (2026), Zenodo concept DOI 10.5281/zenodo.22697420.
+  </div>
+  <a href="https://doi.org/10.5281/zenodo.22697420" target="_blank" class="download">📄 View on Zenodo</a>
+
+  <hr>
+  <h2 id="hfa-tn-06">HFA-TN-06</h2>
+  <h3>Radio-Frequency Channel Characterisation and Detection Protocol for HF SIGNAL 01</h3>
+  <p class="meta">Technical Note — V1, 10 September 2026 · Concept DOI: 10.5281/zenodo.22697451</p>
+  <p>This protocol characterises the radio-frequency channel under conducted 50-ohm conditions rather than radiated transmission. It treats the stated carrier, tone, deviation and detection threshold as parameters to be tested rather than assumed, and records input-power response, latency and false positives with negative controls. Because the reference frequency lies in a band that may require an individual licence, the protocol keeps the measurement separate from transmission authorisation. It cannot establish radiated range, spectrum compliance or complete HF SIGNAL 01 recognition: the optical pathway and the joint-confirmation mechanism remain separate questions.</p>
+  <div class="cite">
+    Giovanni Nardacci, 'HFA-TN-06 — Radio-Frequency Channel Characterisation and Detection Protocol for HF SIGNAL 01' (2026), Zenodo concept DOI 10.5281/zenodo.22697451.
+  </div>
+  <a href="https://doi.org/10.5281/zenodo.22697451" target="_blank" class="download">📄 View on Zenodo</a>
+
+  <hr>
+  <h2 id="hfa-tax-01">HFA-TAX-01</h2>
+  <h3>HFA Taxonomy v1.0: Recognition-Relevant States, Legal Elements and Design Conduct</h3>
+  <p class="meta">Taxonomy — V1.0, 12 September 2026 · Concept DOI: 10.5281/zenodo.22727609</p>
+  <p>The taxonomy separates three layers that must not be collapsed: Layer A legal elements, Layer B measurable system-detection states, and Layer C design conduct. It reproduces the relevant legal elements from the stated ICRC and treaty sources without turning them into machine states; it treats HF SIGNAL 01 as evidence rather than status; and it reserves intent-dependent questions such as perfidy and feigned surrender for human determination. The taxonomy also preserves the ratchet after a recognition-relevant state, prohibits adverse inference from signal absence and contains no numerical technical parameters. It creates no new legal obligation and does not authorise a machine to determine a person's legal status.</p>
+  <div class="cite">
+    Giovanni Nardacci, 'HFA-TAX-01 — HFA Taxonomy v1.0: Recognition-Relevant States: Legal Elements, System Detection States, Design Conduct' (2026), Zenodo concept DOI 10.5281/zenodo.22727609.
+  </div>
+  <a href="https://doi.org/10.5281/zenodo.22727609" target="_blank" class="download">📄 View on Zenodo</a>
+
+  <hr>
+
+  <h2>Related Work</h2>
+  <p>The Technical Notes and HFA-TAX-01 extend the framework of: <a href="lawful-safeguards.html">Lawful Operational Safeguards in AI Systems</a> (Paper I), <a href="systemic-arrestability.html">Systemic Arrestability</a> (Paper II), and <a href="hf-signal-01.html">HF SIGNAL 01</a> (Paper III).</p>
+  <hr>
+  <p class="meta"><em>All notes released under CC BY 4.0. Human Flag Association — Bellinzona, Switzerland.</em></p>
+</body>
+</html>

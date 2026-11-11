@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HF SIGNAL 01 – Human Flag</title>
+<meta content="Human Flag Association" name="author"/>
+<meta content="Paper III — HF SIGNAL 01: protocollo candidato per il riconoscimento della resa (bandiera, canali ottico e radio) proposto come riferimento tecnico ai sensi dell’articolo 41 del Protocollo aggiuntivo I." name="description"/>
+<link href="https://www.humanflag.org/hf-signal-01-it.html" rel="canonical"/>
+<style>
+    body { background: #000; color: #f2f2f2; font-family: Georgia, serif; max-width: 860px; margin: auto; padding: 2em; }
+    h1 { color: #fff; font-size: 1.8em; }
+    h2 { color: #fff; margin-top: 2em; }
+    p { line-height: 1.7; text-align: justify; }
+    a { color: #66ccff; }
+    hr { border-color: #333; margin: 2em 0; }
+    .meta { color: #aaa; font-style: italic; }
+    .cite { background: #111; border-left: 3px solid #66ccff; padding: 1em 1.5em; margin: 1em 0; }
+    .keywords { color: #aaa; font-size: 0.95em; }
+    .download { display: inline-block; margin: 0.5em 0.3em; padding: 0.8em 1.5em; background: #222; color: #66ccff; border-radius: 8px; text-decoration: none; font-weight: bold; }
+    .download:hover { background: #333; }
+    .back { display: inline-block; margin-bottom: 2em; color: #66ccff; text-decoration: none; font-size: 0.9em; }
+    .channels { background: #111; border-left: 3px solid #66ccff; padding: 0.5em 1.5em; margin: 1em 0; }
+    .note { background: #1a1a1a; border: 1px solid #333; padding: 1em 1.5em; margin: 1.5em 0; font-size: 0.95em; color: #ccc; }
+    .langbar { margin: 0 0 1em; font-size: 0.9em; text-align: left; }
+
+  </style>
+  <link rel="alternate" hreflang="it" href="https://www.humanflag.org/hf-signal-01-it.html" />
+  <link rel="alternate" hreflang="fr" href="https://www.humanflag.org/hf-signal-01-fr.html" />
+  <link rel="alternate" hreflang="de" href="https://www.humanflag.org/hf-signal-01-de.html" />
+  <link rel="alternate" hreflang="pt" href="https://www.humanflag.org/hf-signal-01-pt.html" />
+  <link rel="alternate" hreflang="es" href="https://www.humanflag.org/hf-signal-01-es.html" />
+  <link rel="alternate" hreflang="ja" href="https://www.humanflag.org/hf-signal-01-ja.html" />
+  <link rel="alternate" hreflang="ru" href="https://www.humanflag.org/hf-signal-01-ru.html" />
+  <link rel="alternate" hreflang="zh" href="https://www.humanflag.org/hf-signal-01-zh.html" />
+  <meta property="og:title" content="HF SIGNAL 01 – Human Flag" />
+</head>
+<body>
+<p class="langbar"><a href="hf-signal-01.html">English</a> · <strong>Italiano</strong> · <a href="hf-signal-01-fr.html">Français</a> · <a href="hf-signal-01-de.html">Deutsch</a> · <a href="hf-signal-01-es.html">Español</a> · <a href="hf-signal-01-pt.html">Português</a> · <a href="hf-signal-01-ru.html">Русский</a> · <a href="hf-signal-01-zh.html">中文</a> · <a href="hf-signal-01-ja.html">日本語</a></p>
+
+<a class="back" href="index-it.html">← Torna a Human Flag</a>
+<h1>HF SIGNAL 01</h1>
+<p class="meta">Un segnale protettivo leggibile dalla macchina candidato per prove e standardizzazione</p>
+<p class="meta">
+    Giovanni Nardacci — Fondatore, Human Flag Association<br/>
+    humanflag.org<br/>
+    Documento di lavoro — V8, undefined · Concept DOI: 10.5281/zenodo.21183137
+  </p>
+<hr/>
+<h2>Riassunto</h2>
+<p>Il divieto di attaccare una persona riconosciuta come hors de combat è una norma del diritto internazionale umanitario consuetudinario (Rule 47 dell’ICRC Customary IHL Study; articolo 23(c) del Regolamento dell’Aia del 1907), vincolante per tutte le parti di un conflitto armato indipendentemente dalla ratifica dei trattati. Per gli Stati parte del Protocollo aggiuntivo I, l’articolo 41 ne fornisce la formulazione convenzionale più chiara, mentre l’articolo 57 impone a coloro che preparano o decidono un attacco di fare tutto ciò che è fattibile per verificare che l’attacco rimanga lecito. Sebbene tali obblighi siano in vigore da tempo, i sistemi autonomi e semi-autonomi che operano alla velocità delle macchine creano un problema pratico: non esiste una forma leggibile dalla macchina comunemente specificata attraverso la quale un’intenzione di arrendersi possa essere comunicata a tali sistemi e da essi riconosciuta.</p>
+<p>Il presente paper presenta HF SIGNAL 01, un protocollo candidato per il riconoscimento della resa, inteso come riferimento tecnico per espressioni della resa leggibili dalla macchina. Il protocollo offre due modalità alternative: una modalità visiva passiva, che non richiede alcuna attrezzatura, e una modalità elettronica attiva comprendente due canali che devono essere confermati congiuntamente, un segnale ottico bianco pulsante e una firma a radiofrequenza. Il paper non rivendica efficacia operativa, adozione o status giuridico. Il protocollo è un mezzo supplementare per esprimere l’intenzione di arrendersi, mai una condizione di protezione, e dalla sua assenza non può essere tratta alcuna inferenza sfavorevole. Il paper valuta invece la proposta alla luce dei criteri di fattibilità precedentemente definiti per le Lawful Operational Safeguards, tra cui maturità tecnologica, latenza, dataset annotati e validazione indipendente.</p>
+<p>La valutazione è deliberatamente prudente. HF SIGNAL 01 esiste attualmente come candidato documentato pubblicamente, specificato nella sua modalità attiva fino al livello di parametri che possono essere sottoposti a prova e conservati in un file protetto sotto il profilo dell’integrità, mentre i parametri della modalità passiva attendono una determinazione normativa. Non dispone di un rilevatore validato, di un dataset annotato, di una latenza misurata né di una validazione indipendente. Il suo contributo attuale è documentale, non operativo. Il paper sostiene che l’esistenza di uno standard candidato pubblicamente disponibile e protetto sotto il profilo dell’integrità modifichi il contesto fattuale nel quale possono essere valutate le capacità di riconoscimento della resa, trasformando ciò che in precedenza era descritto esclusivamente come impossibilità tecnica in una questione documentata di scelta progettuale, revisione e validazione.</p>
+<p>Il paper conclude invitando a effettuare prove tecniche indipendenti, sviluppare dataset ed esaminare la proposta nelle pertinenti sedi dedicate al diritto internazionale umanitario e alla governance delle armi autonome.</p>
+<hr/>
+<h2>Il segnale</h2>
+<div class="channels">
+<p>HF SIGNAL 01 è un’unica funzione protettiva espressa attraverso due modalità alternative. Non sono requisiti cumulativi.</p>
+<p>• <strong>Modalità visiva passiva</strong> — un disco bianco su un campo rosso, senza alimentazione, apparecchiature, licenza o emissione. È la modalità disponibile a chi non ha nulla.<br/></p>
+<p>• <strong>Modalità elettronica attiva</strong> — un segnale ottico bianco pulsante combinato con una firma radio. I due canali devono essere confermati insieme prima che il segnale sia considerato presente.</p>
+<p>Le due modalità hanno lo stesso significato protettivo ma diversi livelli di accesso: mani nude oppure strumenti. Il protocollo non rende l’attrezzatura una condizione della protezione e l’assenza di una modalità non consente inferenze sfavorevoli.</p>
+</div>
+<div class="note">
+<strong>Parametri tecnici in revisione indipendente.</strong> I parametri dei due canali sono valori di riferimento documentati, non specifiche operative validate. Il canale ottico richiede una valutazione fotobiologica indipendente; frequenze di lampeggio superiori a 3 Hz possono comportare rischi di fotosensibilità in determinate condizioni. Il canale radio rientra nella banda radioamatoriale 144–146 MHz e ogni trasmissione è soggetta all’autorizzazione nazionale. La validazione medica, normativa e ingegneristica indipendente è una precondizione di qualsiasi uso operativo.
+<p><strong>Valore di riferimento della frequenza.</strong> Il valore di 144,0 MHz è un riferimento documentato, non un’assegnazione. La scelta della frequenza operativa richiede il coordinamento con le autorità nazionali e i piani di banda applicabili.</p>
+</div>
+<hr/>
+<h2>Note</h2><p>La versione 8 chiarisce che HF SIGNAL 01 comprende due modalità alternative: una modalità visiva passiva e una modalità elettronica attiva a due canali. La conferma di entrambi i canali riguarda soltanto la modalità attiva. Il paper aggiorna i riferimenti a Paper I, Paper II e alla Nota architetturale.</p><p>Sostituisce la versione 7 (settembre 2026). Il protocollo resta un candidato documentato: non sono dichiarate efficacia operativa, adozione o status giuridico.</p><h2>Citazione</h2>
+<div class="cite">
+    Giovanni Nardacci, 'HF SIGNAL 01: A Candidate Machine-Readable Protective Signal for Testing and Standardisation' (2026), Zenodo concept DOI 10.5281/zenodo.21183137.
+  </div>
+<hr/>
+<h2>Accesso</h2>
+<a class="download" href="https://doi.org/10.5281/zenodo.21183137" target="_blank">📄 Vedi su Zenodo</a>
+<a class="download" href="https://github.com/nardaxxx/hf-signal-01" target="_blank">⚙️ GitHub Repository</a>
+<hr/>
+<h2 id="architecture-note">Nota architetturale</h2><p>Astratto</p><p>Questa nota riporta, in un punto, l'architettura di HF SIGNAL 01 così come l'Associazione l'ha pubblicata. Non modifica alcun documento depositato, non altera alcun identificatore e non impone alcun obbligo. SEGNALE HF 01 non sostituisce la bandiera bianca; lo traduce. Il gesto non è cambiato; il destinatario ha: una macchina non vede una resa; rileva o non riesce a rilevare un segnale e non condivide alcun codice con la bandiera bianca.</p><p>HF SIGNAL 01 è un'unica funzione protettiva espressa attraverso due modalità di diversa accessibilità: una modalità visiva passiva — un disco bianco su campo rosso, che non richiede alimentazione, apparecchiature, licenza o emissione e disponibile a una persona che non ha nulla — e una modalità elettronica attiva, una luce bianca pulsante a 7 Hz insieme ad un tono FM continuo, che presuppone un'apparecchiatura. Le modalità sono espressioni alternative dello stesso significato, non una congiunzione; richiederli tutti escluderebbe proprio quelli meno attrezzati per segnalare. Un segnale confermato richiede la sospensione dell'impegno e la verifica dello stato; non è mai una condizione necessaria di protezione e la sua assenza non consente alcuna conclusione negativa.</p><p>La nota registra anche le questioni che rimangono aperte, tra cui la frequenza portante, il rischio di emissione, la fotosensibilità, la separabilità dagli emblemi protettivi delle Convenzioni di Ginevra e i parametri del simbolo passivo, la cui geometria e cromaticità sono un segnaposto in attesa di determinazione normativa.</p><p class="meta">Versione V4 · 27 agosto 2026 · Concept DOI: 10.5281/zenodo.21809826</p>
+<div class="cite">
+    Giovanni Nardacci, 'HF SIGNAL 01 — Architecture Note (Human Flag Association)' (2026), Zenodo concept DOI 10.5281/zenodo.21809826.
+  </div>
+<a class="download" href="https://doi.org/10.5281/zenodo.21809826" target="_blank">📄 Vedi su Zenodo</a>
+<hr/>
+<h2>Parole chiave</h2>
+<p class="keywords">International Humanitarian Law · Autonomous Weapons Systems · Lethal Autonomous Weapons Systems · Article 41 · Article 57 · Surrender Recognition · Machine-Readable Signal</p>
+<hr/>
+<h2>Lavori correlati</h2>
+<p>HF SIGNAL 01 applica i criteri di fattibilità sviluppati in: <a href="lawful-safeguards-it.html">Lawful Operational Safeguards in AI Systems</a> (Paper I) e <a href="systemic-arrestability-it.html">Systemic Arrestability</a> (Paper II). Il presupposto temporale che determina se un segnale di questo tipo possa essere riconosciuto è sviluppato nella <a href="technical-notes-it.html">nota tecnica HFA HFA-TN-02</a>.</p>
+<hr/>
+<p class="meta"><em>Il working paper è pubblicato con licenza CC BY 4.0 (Zenodo). I file del protocollo sono pubblicati con licenza CC BY-NC-ND 4.0 — gratuiti per uso personale, civile e umanitario; l’implementazione commerciale e istituzionale richiede un accordo scritto di licenza con la Human Flag Association. Human Flag Association — Bellinzona, Svizzera.</em></p>
+<p class="meta"><em>Il paper non rivendica efficacia operativa, adozione o status giuridico.</em></p>
+</body>
+</html>
