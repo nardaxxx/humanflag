@@ -70,18 +70,5 @@ license.txt                    → Licenze Creative Commons applicabili
 CNAME                          → Dominio per GitHub Pages  
 .nojekyll                      → Disattiva Jekyll su GitHub Pages  
 
-NON COLLEGATE
-
-Presenti nel repo ma non collegate da nessuna pagina
-e assenti da sitemap.xml:
-
-index-de1.html                 → Versione breve tedesca  
-index-es1.html                 → Versione breve spagnola  
-index-fr1.html                 → Versione breve francese  
-index-pt1.html                 → Versione breve portoghese  
-index-ru1.html                 → Versione breve russa  
-index-zh1.html                 → Versione breve cinese  
-index-ja1.html                 → Versione breve giapponese  
-
 
 Contatto: humanflag@email.com
